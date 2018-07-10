@@ -12,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ReverseArray.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReverseArray.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ReverseArray.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -21,7 +21,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReverseArrayTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ReverseArrayTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ReverseArrayTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
@@ -219,9 +219,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 05h 55m 20s.xml">
-      <configuration name="ReverseArrayTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ReverseArrayTest - 2018.07.10 at 05h 58m 02s.xml">
       <configuration name="ReverseArrayTest" configurationId="JUnit" />
     </history-entry>
@@ -247,6 +244,9 @@
       <configuration name="ReverseArrayTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ReverseArrayTest - 2018.07.10 at 09h 30m 59s.xml">
+      <configuration name="ReverseArrayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReverseArrayTest - 2018.07.10 at 09h 31m 24s.xml">
       <configuration name="ReverseArrayTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -351,6 +351,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReverseArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ReverseArrayTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -358,13 +365,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReverseArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
