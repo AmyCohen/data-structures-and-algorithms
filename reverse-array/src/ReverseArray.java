@@ -4,7 +4,9 @@ public class ReverseArray {
     }
 
     public static int[] reverseArray() {
-        int[] numbers = {1, 2, 3, 4, 5, 6};
+//        int[] numbers = {1, 2, 3, 4, 5, 6};
+        int[] numbers = {89, 2354, 3546, 23, 10, -923, 823, -12};
+
         int[] reversedNumbers = new int[numbers.length];
         int index = 0;
 

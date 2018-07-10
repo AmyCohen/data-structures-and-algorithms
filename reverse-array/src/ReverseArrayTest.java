@@ -8,7 +8,9 @@ class ReverseArrayTest {
     public void reverseArrayTest() {
         int[] numbers = ReverseArray.reverseArray();
 
-        int[] expected = {6, 5, 4, 3, 2, 1};
+//        int[] expected = {6, 5, 4, 3, 2, 1};
+        int[] expected = {-12, 823, -923, 10, 23, 3546, 2354, 89};
+
         assertArrayEquals(expected, numbers);
 
     }

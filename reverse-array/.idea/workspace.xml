@@ -15,8 +15,8 @@
       <file leaf-file-name="ReverseArray.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ReverseArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            <state relative-caret-position="105">
+              <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
               <folding>
                 <element signature="e#71#72#0" expanded="true" />
                 <element signature="e#108#109#0" expanded="true" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="ReverseArrayTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ReverseArrayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="165">
+              <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,8 +51,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ReverseArrayTestTwo.java" />
-        <option value="$PROJECT_DIR$/src/ReverseArrayTest.java" />
         <option value="$PROJECT_DIR$/src/ReverseArray.java" />
+        <option value="$PROJECT_DIR$/src/ReverseArrayTest.java" />
       </list>
     </option>
   </component>
@@ -222,12 +222,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 05h 25m 17s.xml">
-      <configuration name="ReverseArrayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 05h 33m 23s.xml">
-      <configuration name="ReverseArrayTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ReverseArrayTest - 2018.07.10 at 05h 35m 17s.xml">
       <configuration name="ReverseArrayTest" configurationId="JUnit" />
     </history-entry>
@@ -250,6 +244,12 @@
       <configuration name="ReverseArrayTest.reverseArrayTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ReverseArrayTest - 2018.07.10 at 05h 55m 20s.xml">
+      <configuration name="ReverseArrayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReverseArrayTest - 2018.07.10 at 05h 58m 02s.xml">
+      <configuration name="ReverseArrayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReverseArrayTest - 2018.07.10 at 05h 59m 02s.xml">
       <configuration name="ReverseArrayTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -356,8 +356,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ReverseArrayTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="165">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -366,8 +366,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ReverseArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="105">
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
           <folding>
             <element signature="e#71#72#0" expanded="true" />
             <element signature="e#108#109#0" expanded="true" />
