@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="997a154a-51f4-4d42-a08e-4f67a067eab4" name="Default" comment="" />
+    <list default="true" id="997a154a-51f4-4d42-a08e-4f67a067eab4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/day02/ArrayShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day02/ArrayShift.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,22 +14,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ArrayReverse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/day01/ArrayReverse.java">
+      <file leaf-file-name="ArrayShift.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/day02/ArrayShift.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="55">
+              <caret line="9" lean-forward="true" selection-start-line="7" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayReverseTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/day01/ArrayReverseTest.java">
+      <file leaf-file-name="ArrayShiftTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/day02/ArrayShiftTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="12" column="3" lean-forward="true" selection-start-column="2" selection-end-line="12" selection-end-column="3" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#234#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,6 +45,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -50,13 +55,17 @@
         <option value="$PROJECT_DIR$/src/ArrayReverseTest.java" />
         <option value="$PROJECT_DIR$/src/day01/ArrayReverse.java" />
         <option value="$PROJECT_DIR$/src/day01/ArrayReverseTest.java" />
+        <option value="$PROJECT_DIR$/src/day02/ArrayShiftTest.java" />
+        <option value="$PROJECT_DIR$/src/day02/ArrayShift.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
-    <option name="height" value="722" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -87,13 +96,6 @@
               <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="day01" type="462c0819:PsiDirectoryNode" />
-              <item name="ArrayReverseTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures-and-algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="day02" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -113,6 +115,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="day02" />
       <recent name="day01" />
       <recent name="" />
     </key>
@@ -132,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArrayReverseTest (1)">
+  <component name="RunManager" selected="Application.ArrayShift">
     <configuration name="ArrayReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day01.ArrayReverse" />
       <module name="data-structures-and-algorithms" />
@@ -140,6 +143,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="day01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="ArrayShift" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day02.ArrayShift" />
+      <module name="data-structures-and-algorithms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -247,9 +261,11 @@
       <item itemvalue="JUnit.ArrayReverseTest" />
       <item itemvalue="Application.ArrayReverse" />
       <item itemvalue="JUnit.ArrayReverseTest (1)" />
+      <item itemvalue="Application.ArrayShift" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayShift" />
         <item itemvalue="JUnit.ArrayReverseTest (1)" />
         <item itemvalue="JUnit.ReverseArrayTest" />
         <item itemvalue="Application.ArrayReverse" />
@@ -289,9 +305,15 @@
     <history-entry file="ReverseArrayTest - 2018.07.10 at 17h 39m 42s.xml">
       <configuration name="ReverseArrayTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ArrayReverseTest_(1) - 2018.07.10 at 17h 42m 28s.xml">
+      <configuration name="ArrayReverseTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayReverseTest_(1) - 2018.07.10 at 19h 23m 05s.xml">
+      <configuration name="ArrayReverseTest (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="722" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -302,12 +324,12 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3296" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28413793" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17285945" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -325,11 +347,19 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/day02/ArrayShift.java">
+    <entry file="file://$PROJECT_DIR$/src/day01/ArrayReverseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="63">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -340,13 +370,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/day01/ArrayReverseTest.java">
+    <entry file="file://$PROJECT_DIR$/src/day02/ArrayShiftTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="180">
+          <caret line="12" column="3" lean-forward="true" selection-start-column="2" selection-end-line="12" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#234#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/day02/ArrayShift.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="9" lean-forward="true" selection-start-line="7" selection-end-line="9" />
         </state>
       </provider>
     </entry>
