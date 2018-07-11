@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbe7c047-4352-477c-aa3d-46f342946b1f" name="Default" comment="" />
+    <list default="true" id="997a154a-51f4-4d42-a08e-4f67a067eab4" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,20 +12,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ReverseArray.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ReverseArray.java">
+      <file leaf-file-name="ArrayReverse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/day01/ArrayReverse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="-14">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReverseArrayTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ReverseArrayTest.java">
+      <file leaf-file-name="ArrayReverseTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/day01/ArrayReverseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="90">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,9 +46,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ReverseArrayTestTwo.java" />
-        <option value="$PROJECT_DIR$/src/ReverseArrayTest.java" />
-        <option value="$PROJECT_DIR$/src/ReverseArray.java" />
+        <option value="$PROJECT_DIR$/src/ArrayReverse.java" />
+        <option value="$PROJECT_DIR$/src/ArrayReverseTest.java" />
+        <option value="$PROJECT_DIR$/src/day01/ArrayReverse.java" />
+        <option value="$PROJECT_DIR$/src/day01/ArrayReverseTest.java" />
       </list>
     </option>
   </component>
@@ -62,25 +63,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ReverseArray" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reverse-array" type="462c0819:PsiDirectoryNode" />
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ReverseArray" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reverse-array" type="462c0819:PsiDirectoryNode" />
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="day01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="day01" type="462c0819:PsiDirectoryNode" />
+              <item name="ArrayReverseTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="day02" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -93,6 +113,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="day01" />
       <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -111,21 +132,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReverseArrayTest">
-    <configuration name="ReverseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ReverseArray" />
-      <module name="reverse-array" />
+  <component name="RunManager" selected="JUnit.ArrayReverseTest (1)">
+    <configuration name="ArrayReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day01.ArrayReverse" />
+      <module name="data-structures-and-algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="ReverseArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reverse-array" />
+    <configuration name="ArrayReverseTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-structures-and-algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReverseArrayTest" />
+      <option name="PACKAGE_NAME" value="day01" />
+      <option name="MAIN_CLASS_NAME" value="day01.ArrayReverseTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -137,14 +170,31 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ReverseArrayTest.reverseArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reverse-array" />
+    <configuration name="ArrayReverseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-structures-and-algorithms" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReverseArrayTest" />
-      <option name="METHOD_NAME" value="reverseArrayTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="day01" />
+      <option name="MAIN_CLASS_NAME" value="ArrayReverseTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ReverseArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-structures-and-algorithms" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="day01" />
+      <option name="MAIN_CLASS_NAME" value="day01.ReverseArrayTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -193,15 +243,17 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.ReverseArray" />
       <item itemvalue="JUnit.ReverseArrayTest" />
-      <item itemvalue="JUnit.ReverseArrayTest.reverseArrayTest" />
+      <item itemvalue="JUnit.ArrayReverseTest" />
+      <item itemvalue="Application.ArrayReverse" />
+      <item itemvalue="JUnit.ArrayReverseTest (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArrayReverseTest (1)" />
         <item itemvalue="JUnit.ReverseArrayTest" />
-        <item itemvalue="Application.ReverseArray" />
-        <item itemvalue="JUnit.ReverseArrayTest.reverseArrayTest" />
+        <item itemvalue="Application.ArrayReverse" />
+        <item itemvalue="JUnit.ArrayReverseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -210,64 +262,52 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fbe7c047-4352-477c-aa3d-46f342946b1f" name="Default" comment="" />
-      <created>1531185801871</created>
+      <changelist id="997a154a-51f4-4d42-a08e-4f67a067eab4" name="Default" comment="" />
+      <created>1531268548531</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1531185801871</updated>
+      <updated>1531268548531</updated>
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 05h 58m 02s.xml">
+    <history-entry file="ReverseArrayTest - 2018.07.10 at 17h 25m 47s.xml">
       <configuration name="ReverseArrayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 05h 59m 02s.xml">
+    <history-entry file="ReverseArrayTest - 2018.07.10 at 17h 27m 16s.xml">
       <configuration name="ReverseArrayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 06h 00m 35s.xml">
-      <configuration name="ReverseArrayTest" configurationId="JUnit" />
+    <history-entry file="ArrayReverseTest - 2018.07.10 at 17h 31m 01s.xml">
+      <configuration name="ArrayReverseTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 06h 00m 43s.xml">
-      <configuration name="ReverseArrayTest" configurationId="JUnit" />
+    <history-entry file="ArrayReverseTest - 2018.07.10 at 17h 32m 59s.xml">
+      <configuration name="ArrayReverseTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 06h 02m 03s.xml">
-      <configuration name="ReverseArrayTest" configurationId="JUnit" />
+    <history-entry file="ArrayReverseTest - 2018.07.10 at 17h 33m 59s.xml">
+      <configuration name="ArrayReverseTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 06h 48m 01s.xml">
-      <configuration name="ReverseArrayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 09h 29m 02s.xml">
-      <configuration name="ReverseArrayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 09h 30m 40s.xml">
-      <configuration name="ReverseArrayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 09h 30m 59s.xml">
-      <configuration name="ReverseArrayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReverseArrayTest - 2018.07.10 at 09h 31m 24s.xml">
+    <history-entry file="ReverseArrayTest - 2018.07.10 at 17h 39m 42s.xml">
       <configuration name="ReverseArrayTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="722" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="722" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.3296" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3824" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3296" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1720517" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -285,83 +325,25 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/.." />
-    </ignored-roots>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="15" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+    <entry file="file://$PROJECT_DIR$/src/day02/ArrayShift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/StringUtils.class">
+    <entry file="file://$PROJECT_DIR$/src/day01/ArrayReverse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-14">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertionUtils.class">
+    <entry file="file://$PROJECT_DIR$/src/day01/ArrayReverseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertArrayEquals.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="414" selection-start-line="414" selection-end-line="414" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/Assertions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="287" selection-start-line="287" selection-end-line="287" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReverseArrayTestTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReverseArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReverseArrayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="90">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
