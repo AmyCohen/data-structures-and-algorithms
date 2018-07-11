@@ -1,8 +1,10 @@
+package day01;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-class ReverseArrayTest {
+class ArrayReverseTest {
     @Test
 
     public void reverseArrayTest() {
@@ -10,7 +12,7 @@ class ReverseArrayTest {
 //                int[] originalNumbers = {89, 2354, 3546, 23, 10, -923, 823, -12};
         int[] originalNumbers = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199};
 
-        int[] numbers = ReverseArray.reverseArray(originalNumbers);
+        int[] numbers = ArrayReverse.reverseArray(originalNumbers);
 
 //        int[] expected = {6, 5, 4, 3, 2, 1};
 //        int[] expected = {-12, 823, -923, 10, 23, 3546, 2354, 89};
