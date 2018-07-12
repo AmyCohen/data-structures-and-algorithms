@@ -3,3 +3,4 @@ Daily challenges to improve my usage of Java and the whiteboarding process. The 
 
 - Day 01: [Array Reverse](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day01)
 - Day 02: [Array Shift](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day02)
+- Day 03: [Bianary Search](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day03)
