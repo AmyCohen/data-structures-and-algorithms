@@ -4,7 +4,7 @@ Rotate a 3x3 matrix 90-degrees
 
 ## Challenge
 <!-- Description of the challenge -->
-Write a function that will take a 3x3 array of arrays and shift all values by 90-degrees. This was originally supposed to be a whitboard interview challenge, but that requirement was put off until next week.
+Write a function that will take a 3x3 array of arrays and shift all values by 90-degrees. This was originally supposed to be a whiteboard interview challenge, but that requirement was put off until next week.
 
 ## Solution
 <!-- Embedded whiteboard image -->
