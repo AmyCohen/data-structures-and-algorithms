@@ -10,10 +10,10 @@ public class ListNode {
         this.next = null;
     }
 
-    public ListNode (int value, ListNode next) {
-        this.value = value;
-        this.next = next;
-    }
+//    public ListNode (int value, ListNode next) {
+//        this.value = value;
+//        this.next = next;
+//    }
 
 //    public void set (int value) {
 //        this.value = value;

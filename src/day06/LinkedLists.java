@@ -26,62 +26,97 @@ public class LinkedLists {
                 current = current.next;
             }
             current.next = addLast;
-//            System.out.println(current.value);
         }
     }
 
     //02. Adds a new node with the given newValue immediately before the first value node
     public void insertBefore(int value, int newVal) {
-        ListNode current = root;
-        System.out.println("CURRENT NODE HERE: " + current.value);
 
-        //TRAVIS METHOD
-//        ListNode tempValue = null;
-//        while (current.next.value != value) {
-//        current = current.next;
-//            System.out.println(current.next.value);
-//          }
-//        tempValue.next = current.next;
-//        System.out.println("tempValue: " + tempValue.value);
-//        current.next = tempValue;
-//        System.out.println(current.next.value);
-
-        ListNode tempValue = null;
-        while (current.next != null) {
-            System.out.println("INSIDE WHILE: current.value = " + current.value);
-            if (current.value == value) {
-                tempValue = current.next;
-                System.out.println("tempValue = " + tempValue.value);
-
-                current.next.value = newVal;
-                System.out.println("current.next.value = " + current.next.value);
-
-                current.next.next = tempValue;
-                System.out.println("current.next.next.value " + current.next.next.value);
-                break;
+        //AHMED VERSION
+        try {
+            ListNode val = new ListNode(value);
+            ListNode newValue = new ListNode(newVal);
+            ListNode current = this.root;
+            while (current.next != val) {
+                current = current.next;
             }
-            System.out.println("current.next.next.val: " + current.next.next.value);
-            current = current.next;
+            current.next = newValue;
+            newValue.next = val;
+            }
+        catch (NullPointerException e) {
+            System.out.println("You have reached the end of the list.");
         }
-        System.out.println("current.value (end of method) " + current.value);
+
+//        ListNode current = root;
+//        System.out.println("ROOT: " + root.value);
+//        ListNode tempValue = null;
+//        while (current.next != null) {
+//            System.out.println("INSIDE WHILE/BEFORE IF (c.n.v.) = " + current.value);
+//
+//            if (current.value == value) {
+//                System.out.println("INSIDE IF (c.v.) " + current.value + " equals " + value);
+//                System.out.println();
+//
+//                tempValue = current.next;
+//                System.out.println("C.N. = " + current.next.value);
+//                System.out.println("TEMPVALUE = " + tempValue.value);
+//                System.out.println();
+//
+//                current.next.value = newVal;
+//                System.out.println("C.N.V. = " + current.next.value);
+//                System.out.println("NEWVAL = " + newVal);
+//                System.out.println();
+//
+//                current.next.next = tempValue;
+//                System.out.println("BOTTOM OF IF (C.N.N) = " + current.next.next.value);
+//                System.out.println("TEMPVALUE = " + tempValue.value);
+//                System.out.println();
+//            break;
+//            }
+//            current = current.next;
+//        }
+//        System.out.println("CURRENT = " + current.value);
     }
 
     //03. Adds a new node with the given newValue immediately after the first value node
-//    public void insertAfter (int value, int newVal) {
+    public void insertAfter (int value, int newVal) {
+        ListNode current = root;
+        ListNode tempValue = null;
+        System.out.println("CURRENT NODE HERE: " + current.value);
 
-//    }
+        while (current.next != null) {
+            System.out.println("INSIDE WHILE/BEFORE IF (c.n.v.) = " + current.value);
+            if (current.value == value) {
+                System.out.println("INSIDE IF (c.v.) " + current.value + " equals " + value);
+
+                tempValue = current.next.next;
+                System.out.println("TEMPVALUE = " + tempValue.value);
+
+                current.next.next.value = newVal;
+                System.out.println("C.N.N.V. = " + current.next.next.value);
+
+                current.next.next.next = tempValue;
+                System.out.println("BOTTOM OF IF (C.N.N.N) = " + tempValue.value);
+
+                break;
+            }
+            current = current.next;
+        }
+        System.out.println(current.value);
+    }
+
 
 //    //Method given during class
-//        public int size () {
-//            int total = 0;
-//
-//            ListNode current = this.root;
-//            while (current != null) {
-//                total++;
-//                current = current.next;
-//            }
-//            return total;
-//        }
+        public int size () {
+            int total = 0;
+
+            ListNode current = this.root;
+            while (current != null) {
+                total++;
+                current = current.next;
+            }
+            return total;
+        }
 //
 //    //Method given during class
 //        public int get (int index) {
@@ -100,5 +135,21 @@ public class LinkedLists {
 //        public boolean isEmpty () {
 //            return this.root == null;
 //        }
+
+    //FOUND METHOD
+    //https://crunchify.com/how-to-implement-a-linkedlist-class-from-scratch-in-java/
+    public String toString() {
+        String output = "";
+
+        if (root != null) {
+            ListNode current = root.next;
+            while (current != null) {
+                output += "[" + current.value + "]";
+                current = current.next;
+            }
+
+        }
+        return output;
+    }
 
 }
