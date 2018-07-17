@@ -23,8 +23,8 @@ public class Insertion {
 //        ll.insertBefore(2, 99);
 //        ll.insertBefore(99, 100);
 //        ll.insertBefore(3, 11);
-
-        System.out.println("TO STRING METHOD: " + ll.toString());
+        System.out.println("SIZE OF LIST " +ll.size());
+//        System.out.println("TO STRING METHOD: " + ll.toString());
 
 
 //        ll.insertAfter(1, 88);

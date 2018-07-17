@@ -32,50 +32,20 @@ public class LinkedLists {
     //02. Adds a new node with the given newValue immediately before the first value node
     public void insertBefore(int value, int newVal) {
 
-        //AHMED VERSION
+        //AHMED VERSION TOTAL CREDIT TO HIM
         try {
-            ListNode val = new ListNode(value);
+//            ListNode val = new ListNode(value);
             ListNode newValue = new ListNode(newVal);
             ListNode current = this.root;
-            while (current.next != val) {
+            while (current.next != null) {
                 current = current.next;
             }
+            newValue.next = current.next;
             current.next = newValue;
-            newValue.next = val;
             }
         catch (NullPointerException e) {
             System.out.println("You have reached the end of the list.");
         }
-
-//        ListNode current = root;
-//        System.out.println("ROOT: " + root.value);
-//        ListNode tempValue = null;
-//        while (current.next != null) {
-//            System.out.println("INSIDE WHILE/BEFORE IF (c.n.v.) = " + current.value);
-//
-//            if (current.value == value) {
-//                System.out.println("INSIDE IF (c.v.) " + current.value + " equals " + value);
-//                System.out.println();
-//
-//                tempValue = current.next;
-//                System.out.println("C.N. = " + current.next.value);
-//                System.out.println("TEMPVALUE = " + tempValue.value);
-//                System.out.println();
-//
-//                current.next.value = newVal;
-//                System.out.println("C.N.V. = " + current.next.value);
-//                System.out.println("NEWVAL = " + newVal);
-//                System.out.println();
-//
-//                current.next.next = tempValue;
-//                System.out.println("BOTTOM OF IF (C.N.N) = " + current.next.next.value);
-//                System.out.println("TEMPVALUE = " + tempValue.value);
-//                System.out.println();
-//            break;
-//            }
-//            current = current.next;
-//        }
-//        System.out.println("CURRENT = " + current.value);
     }
 
     //03. Adds a new node with the given newValue immediately after the first value node
