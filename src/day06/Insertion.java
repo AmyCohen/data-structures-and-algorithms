@@ -1,5 +1,6 @@
 package day06;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public class Insertion {
@@ -18,12 +19,12 @@ public class Insertion {
         ll.append(4);
         ll.append(5);
 
-        System.out.println("SIZE OF LIST " +ll.size());
-        ll.insertBefore(4, 77);
-//        ll.insertBefore(2, 99);
+ll.printList();
+ll.insertBefore(4, 77);
+        ll.insertBefore(2, 99);
 //        ll.insertBefore(99, 100);
 //        ll.insertBefore(3, 11);
-        System.out.println("SIZE OF LIST " +ll.size());
+ll.printList();
 //        System.out.println("TO STRING METHOD: " + ll.toString());
 
 

@@ -35,9 +35,11 @@ public class LinkedLists {
         //AHMED VERSION TOTAL CREDIT TO HIM
         try {
 //            ListNode val = new ListNode(value);
+            ListNode nodeValue = new ListNode(value);
             ListNode newValue = new ListNode(newVal);
             ListNode current = this.root;
-            while (current.next != null) {
+
+            while (current.value != value) {
                 current = current.next;
             }
             newValue.next = current.next;
@@ -106,20 +108,25 @@ public class LinkedLists {
 //            return this.root == null;
 //        }
 
-    //FOUND METHOD
-    //https://crunchify.com/how-to-implement-a-linkedlist-class-from-scratch-in-java/
-    public String toString() {
-        String output = "";
-
-        if (root != null) {
-            ListNode current = root.next;
-            while (current != null) {
-                output += "[" + current.value + "]";
-                current = current.next;
+    //Written by Tyler Pearson
+    public void printList() {
+        if (root == null) {
+            System.out.println("<");
+            System.out.println(">");
+        } else {
+            ListNode temp = root;
+            System.out.println("<");
+            while (temp != null) {
+                if (temp == this.root) {
+                    System.out.print("[" + temp.value + "]" + "-->");
+                } else {
+                    System.out.print("[" + temp.value + "]");
+                    System.out.print("-->");
+                }
+                temp = temp.next;
             }
-
+            System.out.println("[end]>");
         }
-        return output;
     }
 
 }
