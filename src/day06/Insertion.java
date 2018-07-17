@@ -1,9 +1,6 @@
 package day06;
 
-import javafx.scene.Node;
-
 import java.util.LinkedList;
-import java.util.List;
 
 public class Insertion {
     public static void main(String[] args) {
@@ -11,34 +8,53 @@ public class Insertion {
         insertion();
     }
 
-    public static List insertion () {
+    public static void insertion () {
 
-        int data;
-        List<Integer> ll = new LinkedList<> ();
-        ll.add(2);
-        ll.add(4);
+        LinkedLists ll = new LinkedLists();
 
-        ll.size();
-        System.out.println(ll.size());
+        ll.append(1);
+        ll.append(2);
+        ll.append(3);
+        ll.append(4);
+        ll.append(5);
 
-        return ll;
-    }
 
-    public void append(int new_data) {
-        Node new_node = new Node(new_data);
+        ll.insertBefore(4, 77);
+        ll.insertBefore(2, 99);
+        ll.insertBefore(99, 100);
 
-        if (head == null) {
-            head = new Node(new_data);
-//            return;
+
+
+//        ll.getIndex(14);
+//        System.out.println(ll.getIndex(14));
+//        System.out.println(ll.size());
+//        System.out.println("Index 0 is " + ll.get(0) + ". Should be 19");
+//        System.out.println("Index 1 is " + ll.get(1) + ". Should be 22");
+//        System.out.println("Index 2 is " + ll.get(2) + ". Should be 1");
+//        System.out.println("Index 3 is " + ll.get(3));
+//        System.out.println("Index 4 is " + ll.get(4));
+
+
+
+
+//        LinkedList help = new LinkedList();
+//        help.addLast(16);
+
+        /**
+         * Links e as last element.
+        void linkLast(E e) {
+            final LinkedList.Node<E> l = last;
+            final LinkedList.Node<E> newNode = new LinkedList.Node<>(l, e, null);
+            last = newNode;
+            if (l == null)
+                first = newNode;
+            else
+                l.next = newNode;
+            size++;
+            modCount++;
         }
-        new_node.next = null;
-
-        Node last = head;
-        while (last.next != null)
-            last = last.next;
-
-        last.next = new_node;
-
+         */
     }
+
 
 }
