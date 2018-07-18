@@ -20,12 +20,22 @@ public class Insertion {
         ll.append(5);
 
 ll.printList();
+<<<<<<< HEAD
 ll.insertAfter(4, 77);
         ll.insertAfter(2, 99);
         ll.insertBefore(99, 100);
 //        ll.insertBefore(3, 11);
 ll.printList();
         System.out.println("TO STRING METHOD: " + ll.toString());
+=======
+ll.insertBefore(4, 77);
+        ll.insertBefore(2, 99);
+        ll.insertBefore(99, 100);
+        ll.insertBefore(3, 11);
+ll.printList();
+        System.out.println(ll.toString());
+//        System.out.println("TO STRING METHOD: " + ll.toString());
+>>>>>>> bc3e8994fe41c49a42c60d793cc6f8c24ef84849
 
 
 //        ll.insertAfter(1, 88);
