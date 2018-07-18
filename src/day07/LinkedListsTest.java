@@ -19,7 +19,7 @@ class LinkedListsTest {
         ll.append(5);
 
         ListNode actual = ll.kthElementFromEnd(2);
-        ListNode expected = ll.;
+        ListNode expected = ll.root;
 
         assertEquals(expected, actual);
 
