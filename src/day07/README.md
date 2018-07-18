@@ -16,6 +16,6 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![Page 1](https://drive.google.com/file/d/0BzjRlIqwUmRXMVZMWGNBSTZhc3U3LVRBRWpwYzI4R3d4SWxR/view?usp=sharing)
-![Page 2](https://drive.google.com/file/d/0BzjRlIqwUmRXaGpFdGx1eTRyMTdyRkhpZUU5eHhpZkxFMXBB/view?usp=sharing)
-![Page 3](https://drive.google.com/file/d/0BzjRlIqwUmRXb0FMZ0o4ejNYeXNJbGZZa2hXTDhfdTVHTGFj/view?usp=sharing)
+![Page 1](/Users/amycohen/Desktop/Code\ 401/whiteboarding-images/day07/page01.jpg)
+![Page 2](/Users/amycohen/Desktop/Code\ 401/whiteboarding-images/day07/page02.jpg)
+![Page 3](/Users/amycohen/Desktop/Code\ 401/whiteboarding-images/day07/page03.jpg)
