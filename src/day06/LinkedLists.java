@@ -1,7 +1,5 @@
 package day06;
 
-import java.util.List;
-
 public class LinkedLists {
 
     public ListNode root;
@@ -12,12 +10,8 @@ public class LinkedLists {
         this.root = null;
     }
 
-<<<<<<< HEAD
     //It's not pretty, but I'm proud of this one because I wrote it without help. Slowly starting to understand.
     //01. Adds a new node with the given value to the end of the list
-=======
-    //01. Adds a new node with the given data to the end of the list
->>>>>>> bc3e8994fe41c49a42c60d793cc6f8c24ef84849
     public void append(int value) {
         ListNode addLast = new ListNode(value);
 
@@ -35,46 +29,29 @@ public class LinkedLists {
         }
     }
 
-    //02. Adds a new node with the given newValue immediately before the first data node
+    //02. Adds a new node with the given newValue immediately before the first value node
     public void insertBefore(int value, int newVal) {
 
         //Modified by adding ".next" to the while loop so it would look ahead and stop before passing what I needed
         //to insert before. Method discussed in class.
         try {
-<<<<<<< HEAD
             ListNode newValue = new ListNode(newVal);
             ListNode current = this.root;
 
             while (current.next.data != value) {
-=======
-//            ListNode val = new ListNode(data);
-            ListNode nodeValue = new ListNode(value);
-            ListNode newValue = new ListNode(newVal);
-            ListNode current = this.root;
-
-            while (current.data != value) {
->>>>>>> bc3e8994fe41c49a42c60d793cc6f8c24ef84849
                 current = current.next;
             }
             newValue.next = current.next;
             current.next = newValue;
-            }
+        }
         catch (NullPointerException e) {
             System.out.println("You have reached the end of the list.");
         }
     }
 
-    //03. Adds a new node with the given newValue immediately after the first data node
+    //03. Adds a new node with the given newValue immediately after the first value node
     public void insertAfter (int value, int newVal) {
-<<<<<<< HEAD
         //AHMED VERSION with my own slight mods
-=======
-
-        //Note to Molly: I had this incorrectly listed as insertBefore, but when I finally got it to print, it is
-        //actually the insert after method.  I didn't just want to copy and paste Steve's version because I actually
-        //DID work on it. It just sucked.
-        //AHMED VERSION with my own mods.
->>>>>>> bc3e8994fe41c49a42c60d793cc6f8c24ef84849
         try {
             ListNode newValue = new ListNode(newVal);
             ListNode current = this.root;
@@ -91,38 +68,35 @@ public class LinkedLists {
     }
 
 
-//    //Method given during class
-        public int size () {
-            int total = 0;
+    //    //Method given during class
+    public int size () {
+        int total = 0;
 
-            ListNode current = this.root;
-            while (current != null) {
-                total++;
-                current = current.next;
-            }
-            return total;
+        ListNode current = this.root;
+        while (current != null) {
+            total++;
+            current = current.next;
         }
+        return total;
+    }
 
     //Method given during class
-        public int get (int index) {
-            int n = 0;
-            ListNode current = this.root;
+    public int get (int index) {
+        int n = 0;
+        ListNode current = this.root;
 
-            while (n < index) {
-                n++;
-                current = current.next;
-            }
-            System.out.println(current.data);
-            return current.data;
+        while (n < index) {
+            n++;
+            current = current.next;
         }
-<<<<<<< HEAD
+        System.out.println(current.data);
+        return current.data;
+    }
 
-//    Method given during class
-        public boolean isEmpty () {
-            return this.root == null;
-        }
-=======
->>>>>>> bc3e8994fe41c49a42c60d793cc6f8c24ef84849
+    //    Method given during class
+    public boolean isEmpty () {
+        return this.root == null;
+    }
 
     //Written by Tyler Pearson
     public void printList() {
@@ -143,25 +117,6 @@ public class LinkedLists {
             }
             System.out.println("[end]>");
         }
-    }
-    
-    //Method written in class (but I'm missing something)
-    public String toString () {
-        String result = "";
-        ListNode current = this.root;
-
-        if (this.root == null) {
-            return "[]";
-        }
-
-        while (current != null) {
-
-            if (current.next != null) {
-             result += ", ";
-            }
-            current = current.next;
-        }
-        return "[" + result + "]";
     }
 
     //Method written in class
@@ -189,3 +144,4 @@ public class LinkedLists {
     }
 
 }
+
