@@ -7,8 +7,8 @@ public class LinkedLists {
     public LinkedLists () {
         this.root = null;
     }
-
-    public int getValueFromEnd (int k) {
+public ListNode kthElementFromEnd(int k) {
+//    public int getValueFromEnd (int k) {
         ListNode node = new ListNode(k);
         ListNode current = root;
         int count = 0;
@@ -36,9 +36,11 @@ public class LinkedLists {
             }
         }
         System.out.println("Node Data = " +node.data);
-        return node.data;
+//        return node.data;
+        return node;
 
-    }
+
+}
 
     //01. Adds a new node with the given data to the end of the list
     public void append(int value) {
