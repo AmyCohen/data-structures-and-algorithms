@@ -16,6 +16,6 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![Page 1](/Users/amycohen/Desktop/Code\ 401/whiteboarding-images/day07/page01.jpg)
-![Page 2](/Users/amycohen/Desktop/Code\ 401/whiteboarding-images/day07/page02.jpg)
-![Page 3](/Users/amycohen/Desktop/Code\ 401/whiteboarding-images/day07/page03.jpg)
+[Page 1](/Users/amycohen/Desktop/Code 401/whiteboarding-images/day07/page01.jpg)
+[Page 2](/Users/amycohen/Desktop/Code 401/whiteboarding-images/day07/page02.jpg)
+[Page 3](/Users/amycohen/Desktop/Code 401/whiteboarding-images/day07/page03.jpg)
