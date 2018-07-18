@@ -2,21 +2,21 @@ package day06;
 
 public class ListNode {
 
-    int value;
+    int data;
      ListNode next;
 
-    public ListNode (int value) {
-        this.value = value;
+    public ListNode (int data) {
+        this.data = data;
         this.next = null;
     }
 
-//    public ListNode (int value, ListNode next) {
-//        this.value = value;
+//    public ListNode (int data, ListNode next) {
+//        this.data = data;
 //        this.next = next;
 //    }
 
-//    public void set (int value) {
-//        this.value = value;
+//    public void set (int data) {
+//        this.data = data;
 //    }
 //
 //    public void setNext (ListNode next) {

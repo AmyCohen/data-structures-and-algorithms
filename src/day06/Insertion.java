@@ -22,9 +22,10 @@ public class Insertion {
 ll.printList();
 ll.insertBefore(4, 77);
         ll.insertBefore(2, 99);
-//        ll.insertBefore(99, 100);
-//        ll.insertBefore(3, 11);
+        ll.insertBefore(99, 100);
+        ll.insertBefore(3, 11);
 ll.printList();
+        System.out.println(ll.toString());
 //        System.out.println("TO STRING METHOD: " + ll.toString());
 
 

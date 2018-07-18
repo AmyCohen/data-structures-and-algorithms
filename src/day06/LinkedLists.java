@@ -1,5 +1,7 @@
 package day06;
 
+import java.util.List;
+
 public class LinkedLists {
 
     public ListNode root;
@@ -11,7 +13,7 @@ public class LinkedLists {
         this.root = null;
     }
 
-    //01. Adds a new node with the given value to the end of the list
+    //01. Adds a new node with the given data to the end of the list
     public void append(int value) {
         ListNode addLast = new ListNode(value);
 
@@ -29,17 +31,17 @@ public class LinkedLists {
         }
     }
 
-    //02. Adds a new node with the given newValue immediately before the first value node
+    //02. Adds a new node with the given newValue immediately before the first data node
     public void insertBefore(int value, int newVal) {
 
         //AHMED VERSION TOTAL CREDIT TO HIM
         try {
-//            ListNode val = new ListNode(value);
+//            ListNode val = new ListNode(data);
             ListNode nodeValue = new ListNode(value);
             ListNode newValue = new ListNode(newVal);
             ListNode current = this.root;
 
-            while (current.value != value) {
+            while (current.data != value) {
                 current = current.next;
             }
             newValue.next = current.next;
@@ -50,31 +52,31 @@ public class LinkedLists {
         }
     }
 
-    //03. Adds a new node with the given newValue immediately after the first value node
+    //03. Adds a new node with the given newValue immediately after the first data node
     public void insertAfter (int value, int newVal) {
         ListNode current = root;
         ListNode tempValue = null;
-        System.out.println("CURRENT NODE HERE: " + current.value);
+        System.out.println("CURRENT NODE HERE: " + current.data);
 
         while (current.next != null) {
-            System.out.println("INSIDE WHILE/BEFORE IF (c.n.v.) = " + current.value);
-            if (current.value == value) {
-                System.out.println("INSIDE IF (c.v.) " + current.value + " equals " + value);
+            System.out.println("INSIDE WHILE/BEFORE IF (c.n.v.) = " + current.data);
+            if (current.data == value) {
+                System.out.println("INSIDE IF (c.v.) " + current.data + " equals " + value);
 
                 tempValue = current.next.next;
-                System.out.println("TEMPVALUE = " + tempValue.value);
+                System.out.println("TEMPVALUE = " + tempValue.data);
 
-                current.next.next.value = newVal;
-                System.out.println("C.N.N.V. = " + current.next.next.value);
+                current.next.next.data = newVal;
+                System.out.println("C.N.N.V. = " + current.next.next.data);
 
                 current.next.next.next = tempValue;
-                System.out.println("BOTTOM OF IF (C.N.N.N) = " + tempValue.value);
+                System.out.println("BOTTOM OF IF (C.N.N.N) = " + tempValue.data);
 
                 break;
             }
             current = current.next;
         }
-        System.out.println(current.value);
+        System.out.println(current.data);
     }
 
 
@@ -99,8 +101,8 @@ public class LinkedLists {
 //                n++;
 //                current = current.next;
 //            }
-//            System.out.println(current.value);
-//            return current.value;
+//            System.out.println(current.data);
+//            return current.data;
 //        }
 
     //Method given during class
@@ -118,15 +120,33 @@ public class LinkedLists {
             System.out.println("<");
             while (temp != null) {
                 if (temp == this.root) {
-                    System.out.print("[" + temp.value + "]" + "-->");
+                    System.out.print("[" + temp.data + "]" + "-->");
                 } else {
-                    System.out.print("[" + temp.value + "]");
+                    System.out.print("[" + temp.data + "]");
                     System.out.print("-->");
                 }
                 temp = temp.next;
             }
             System.out.println("[end]>");
         }
+    }
+
+    public String toString () {
+        String result = "";
+        ListNode current = this.root;
+
+        if (this.root == null) {
+            return "[]";
+        }
+
+        while (current != null) {
+
+            if (current.next != null) {
+             result += ", ";
+            }
+            current = current.next;
+        }
+        return "[" + result + "]";
     }
 
 }
