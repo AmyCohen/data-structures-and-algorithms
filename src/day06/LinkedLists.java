@@ -1,19 +1,17 @@
 package day06;
 
-import java.util.List;
-
 public class LinkedLists {
 
     public ListNode root;
     public ListNode current;
-    public ListNode insertValue;
 
 
     public LinkedLists() {
         this.root = null;
     }
 
-    //01. Adds a new node with the given data to the end of the list
+    //It's not pretty, but I'm proud of this one because I wrote it without help. Slowly starting to understand.
+    //01. Adds a new node with the given value to the end of the list
     public void append(int value) {
         ListNode addLast = new ListNode(value);
 
@@ -31,34 +29,29 @@ public class LinkedLists {
         }
     }
 
-    //02. Adds a new node with the given newValue immediately before the first data node
+    //02. Adds a new node with the given newValue immediately before the first value node
     public void insertBefore(int value, int newVal) {
 
-        //AHMED VERSION TOTAL CREDIT TO HIM
+        //Modified by adding ".next" to the while loop so it would look ahead and stop before passing what I needed
+        //to insert before. Method discussed in class.
         try {
-//            ListNode val = new ListNode(data);
-            ListNode nodeValue = new ListNode(value);
             ListNode newValue = new ListNode(newVal);
             ListNode current = this.root;
 
-            while (current.data != value) {
+            while (current.next.data != value) {
                 current = current.next;
             }
             newValue.next = current.next;
             current.next = newValue;
-            }
+        }
         catch (NullPointerException e) {
             System.out.println("You have reached the end of the list.");
         }
     }
 
-    //03. Adds a new node with the given newValue immediately after the first data node
+    //03. Adds a new node with the given newValue immediately after the first value node
     public void insertAfter (int value, int newVal) {
-
-        //Note to Molly: I had this incorrectly listed as insertBefore, but when I finally got it to print, it is
-        //actually the insert after method.  I didn't just want to copy and paste Steve's version because I actually
-        //DID work on it. It just sucked.
-        //AHMED VERSION with my own mods.
+        //AHMED VERSION with my own slight mods
         try {
             ListNode newValue = new ListNode(newVal);
             ListNode current = this.root;
@@ -75,30 +68,35 @@ public class LinkedLists {
     }
 
 
-//    //Method given during class
-        public int size () {
-            int total = 0;
+    //    //Method given during class
+    public int size () {
+        int total = 0;
 
-            ListNode current = this.root;
-            while (current != null) {
-                total++;
-                current = current.next;
-            }
-            return total;
+        ListNode current = this.root;
+        while (current != null) {
+            total++;
+            current = current.next;
         }
+        return total;
+    }
 
     //Method given during class
-        public int get (int index) {
-            int n = 0;
-            ListNode current = this.root;
+    public int get (int index) {
+        int n = 0;
+        ListNode current = this.root;
 
-            while (n < index) {
-                n++;
-                current = current.next;
-            }
-            System.out.println(current.data);
-            return current.data;
+        while (n < index) {
+            n++;
+            current = current.next;
         }
+        System.out.println(current.data);
+        return current.data;
+    }
+
+    //    Method given during class
+    public boolean isEmpty () {
+        return this.root == null;
+    }
 
     //Written by Tyler Pearson
     public void printList() {
@@ -120,24 +118,30 @@ public class LinkedLists {
             System.out.println("[end]>");
         }
     }
-    
-    //Method written in class (but I'm missing something)
-    public String toString () {
-        String result = "";
-        ListNode current = this.root;
 
+    //Method written in class
+    public String toString() {
         if (this.root == null) {
             return "[]";
         }
 
-        while (current != null) {
+        String result = "";
+        ListNode current = this.root;
 
+        while (current != null) {
+            result += current.data;
+
+            // if there's another node after this one
+            // then place a comma and a space
             if (current.next != null) {
-             result += ", ";
+                result += ", ";
             }
+
             current = current.next;
         }
+
         return "[" + result + "]";
     }
 
 }
+
