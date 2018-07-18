@@ -54,29 +54,24 @@ public class LinkedLists {
 
     //03. Adds a new node with the given newValue immediately after the first data node
     public void insertAfter (int value, int newVal) {
-        ListNode current = root;
-        ListNode tempValue = null;
-        System.out.println("CURRENT NODE HERE: " + current.data);
 
-        while (current.next != null) {
-            System.out.println("INSIDE WHILE/BEFORE IF (c.n.v.) = " + current.data);
-            if (current.data == value) {
-                System.out.println("INSIDE IF (c.v.) " + current.data + " equals " + value);
+        //Note to Molly: I had this incorrectly listed as insertBefore, but when I finally got it to print, it is
+        //actually the insert after method.  I didn't just want to copy and paste Steve's version because I actually
+        //DID work on it. It just sucked.
+        //AHMED VERSION with my own mods.
+        try {
+            ListNode newValue = new ListNode(newVal);
+            ListNode current = this.root;
 
-                tempValue = current.next.next;
-                System.out.println("TEMPVALUE = " + tempValue.data);
-
-                current.next.next.data = newVal;
-                System.out.println("C.N.N.V. = " + current.next.next.data);
-
-                current.next.next.next = tempValue;
-                System.out.println("BOTTOM OF IF (C.N.N.N) = " + tempValue.data);
-
-                break;
+            while (current.data != value) {
+                current = current.next;
             }
-            current = current.next;
+            newValue.next = current.next;
+            current.next = newValue;
         }
-        System.out.println(current.data);
+        catch (NullPointerException e) {
+            System.out.println("You have reached the end of the list.");
+        }
     }
 
 
@@ -91,24 +86,19 @@ public class LinkedLists {
             }
             return total;
         }
-//
-//    //Method given during class
-//        public int get (int index) {
-//            int n = 0;
-//            ListNode current = this.root;
-//
-//            while (n < index) {
-//                n++;
-//                current = current.next;
-//            }
-//            System.out.println(current.data);
-//            return current.data;
-//        }
 
     //Method given during class
-//        public boolean isEmpty () {
-//            return this.root == null;
-//        }
+        public int get (int index) {
+            int n = 0;
+            ListNode current = this.root;
+
+            while (n < index) {
+                n++;
+                current = current.next;
+            }
+            System.out.println(current.data);
+            return current.data;
+        }
 
     //Written by Tyler Pearson
     public void printList() {
@@ -130,7 +120,8 @@ public class LinkedLists {
             System.out.println("[end]>");
         }
     }
-
+    
+    //Method written in class (but I'm missing something)
     public String toString () {
         String result = "";
         ListNode current = this.root;
