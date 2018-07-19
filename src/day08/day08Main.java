@@ -11,11 +11,15 @@ public class day08Main {
         list1.append(2);
         list1.append(3);
         list1.append(4);
+        list1.append(0);
 
         list2.append(5);
         list2.append(6);
         list2.append(7);
         list2.append(8);
+        list2.append(9);
+        list2.append(10);
+
 
         System.out.println(list1.toString());
         System.out.println(list2.toString());
