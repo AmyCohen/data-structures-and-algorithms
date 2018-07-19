@@ -18,7 +18,6 @@ public class day08Main {
         list2.append(7);
         list2.append(8);
         list2.append(9);
-        list2.append(10);
 
 
         System.out.println(list1.toString());
