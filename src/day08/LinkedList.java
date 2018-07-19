@@ -3,12 +3,72 @@ package day08;
 public class LinkedList {
 
     public ListNode root;
-    public ListNode current;
 
 
     public LinkedList() {
 
         this.root = null;
+    }
+
+
+    public LinkedList mergeLists(LinkedList list1, LinkedList list2) {
+
+        LinkedList list3 = new LinkedList();
+
+        if (list1.size() > list2.size()) {
+            System.out.println("List 1 is bigger");
+            list3 = mergeListWhenOneIsLarger(list1, list2);
+        } else if (list1.size() < list2.size()) {
+            System.out.println("List 2 is bigger");
+            list3 = mergeListWhenTwoIsLarger(list1, list2);
+        } else if (list1.size() == list2.size()) {
+            System.out.println("The Lists are equal");
+            list3 = mergeListWhenEqualSize(list1, list2);
+        }
+
+        System.out.println(list3.toString());
+        return list3;
+    }
+
+    //Helper function for mergeLists.
+    public static LinkedList mergeListWhenOneIsLarger (LinkedList list1, LinkedList list2) {
+        LinkedList list3 = new LinkedList();
+
+        for (int i = 0; i < list1.size(); i++) {
+            if (list2.size() > i) {
+                list3.append(list1.get(i));
+                list3.append((list2.get(i)));
+            } else {
+                list3.append(list1.get(i));
+            }
+        }
+            return list3;
+    }
+
+    //Helper function for mergeLists.
+    public static LinkedList mergeListWhenTwoIsLarger (LinkedList list1, LinkedList list2) {
+        LinkedList list3 = new LinkedList();
+
+        for (int i = 0; i < list2.size(); i++) {
+            if (list1.size() > i) {
+                list3.append(list1.get(i));
+                list3.append((list2.get(i)));
+            } else {
+                list3.append(list2.get(i));
+            }
+        }
+        return list3;
+    }
+
+    //Helper function for mergeLists.
+    public static LinkedList mergeListWhenEqualSize (LinkedList list1, LinkedList list2) {
+        LinkedList list3 = new LinkedList();
+
+        for (int i = 0; i < list1.size(); i++) {
+            list3.append(list1.get(i));
+            list3.append((list2.get(i)));
+        }
+        return list3;
     }
 
 
@@ -45,8 +105,12 @@ public class LinkedList {
         System.out.println("Node Data = " +node.data);
 //        return node.data;
         return node;
+    }
 
-
+    public void prepend(int data) {
+        ListNode nn = new ListNode(data);
+        nn.next = this.root;
+        this.root = nn;
     }
 
     public void append(int value) {
@@ -99,49 +163,55 @@ public class LinkedList {
         return total;
     }
 
-    public void insertBefore(int value, int newVal) {
-
-        try {
-            ListNode newValue = new ListNode(newVal);
-            ListNode current = this.root;
-
-            while (current.next.data != value) {
-                current = current.next;
-            }
-            newValue.next = current.next;
-            current.next = newValue;
+    //Using method Steve wrote in class to replace the one I worked on.
+    public void insertBefore(int target, int value) {
+        // if the target is at the root of the list
+        // then handle the special case that we need to replace
+        // explicitly the root and not just attaching it between two
+        // nodes in the middle of the list.
+        if (this.root.data == target) {
+            this.prepend(value);
         }
-        catch (NullPointerException e) {
-            System.out.println("You have reached the end of the list.");
+
+        ListNode node = new ListNode(value);
+        ListNode current = this.root;
+
+        // step through the list until we get to a current node
+        // that has the target value
+        while (current.next.data != target) {
+            current = current.next;
         }
+
+        // now tie the new node into the list
+        node.next = current.next;
+        current.next = node;
     }
 
-    public void insertAfter (int value, int newVal) {
-        try {
-            ListNode newValue = new ListNode(newVal);
-            ListNode current = this.root;
+    //Using method Steve wrote in class to replace the one I worked on.
+    public void insertAfter(int target, int newValue) {
+        ListNode node = new ListNode(newValue);
+        ListNode current = this.root;
 
-            while (current.data != value) {
-                current = current.next;
-            }
-            newValue.next = current.next;
-            current.next = newValue;
+        // step through the list until we get to a current node
+        // that has the target value
+        while (current.data != target) {
+            current = current.next;
         }
-        catch (NullPointerException e) {
-            System.out.println("You have reached the end of the list.");
-        }
+
+        // now tie the new node into the list
+        node.next = current.next;
+        current.next = node;
     }
 
     //Method given during class
-    public int get (int index) {
+    public int get (int valueAtIndex) {
         int n = 0;
         ListNode current = this.root;
 
-        while (n < index) {
+        while (n < valueAtIndex) {
             n++;
             current = current.next;
         }
-        System.out.println(current.data);
         return current.data;
     }
 
