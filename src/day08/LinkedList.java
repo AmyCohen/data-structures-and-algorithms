@@ -10,85 +10,30 @@ public class LinkedList {
         this.root = null;
     }
 
-//    public LinkedList mergeLists (LinkedList list1, LinkedList list2) {
-//        ListNode current = root;
-//        ListNode combinedList = root;
-//        ListNode list1current = new ListNode(list1);
-//        ListNode list2current = new ListNode(list2);
-//        LinkedList merge = new LinkedList();
-//
-//        if (list1.size() < list2.size() ) {
-//            System.out.println("List 1 is bigger, start here.");
-//        } else if (list1.size() > list2.size() ) {
-//            System.out.println("List 2 is bigger, start here.");
-//        } else if (list1.size() == list2.size()) {
-//            System.out.println("The Lists are equal");
-//        }
-//
-//        for (int i = 0; i < list1.size(); i++) {
-//            list1.insertAfter(list1.get(i), list2.get(i));
-//            System.out.println(list1);
-//        }
+
+    public LinkedList mergeLists(LinkedList list1, LinkedList list2) {
+
+        LinkedList list3 = new LinkedList();
+
+        if (list1.size() < list2.size()) {
+            System.out.println("List 1 is bigger, start here.");
+        } else if (list1.size() > list2.size()) {
+            System.out.println("List 2 is bigger, start here.");
+        } else if (list1.size() == list2.size()) {
+            System.out.println("The Lists are equal");
+        }
+
+        for (int i = 0; i < list1.size(); i++) {
+            list3.append(list1.get(i));
+            list3.append((list2.get(i)));
+            System.out.println(list3);
+        }
+
+        System.out.println(list3.toString());
+        return list3;
+    }
 
 
-//        int countList1 = 0;
-//        int countList2 = 0;
-
-//        list1current = this.root;
-//        list2current = this.root;
-
-//        while (list1current != null){
-//            for (int i = 0; i < list1.size()-1; i++) {
-//                countList1++;
-//                current = current.next;
-//            }
-
-
-//            for (int i = 0; i < list1.size(); i++) {
-//                merge.append(list1current.data);
-//                while (list1current != null) {
-//                    list1current = list1current.next;
-//                    System.out.println(merge.toString());
-//                }
-//            }
-
-
-
-//        System.out.println("Count 1 Value: " + list1current.value.toString());
-//        System.out.println("Count 1 List: " + countList1);
-
-//        while (list2current != null){
-//            countList2++;
-//            list2current = list2current.next;
-//        }
-
-
-
-//        Boolean isRunning = true;
-
-//        while (list1current.next != null) {
-
-
-//            while (list1 != null) {
-//                System.out.println("List 1 Merged Value: " + mergedList.data);
-//                list1current = list1current.next;
-//                System.out.println("List s 1 Current Value: " + list1current.data);
-//                mergedList.next.next = list1current.next;
-
-//            }
-//            if (list2 != null) {
-//                mergedList.next = list2current;
-//                System.out.println("List 2 Merged Value: " + mergedList.data);
-//                list2current = list2current.next;
-//                System.out.println("List 2 Current Value: " + list1current.data);
-//            }
-//                mergedList = mergedList.next;
-//                isRunning = false;
-//            System.out.println("End mergedList = " + mergedList.data);
-//            return current.data;
-//        }
-//                return merge;
-//    }
 
     //PREVIOUS METHODS
 
