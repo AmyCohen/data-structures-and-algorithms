@@ -19,7 +19,7 @@ class LinkedListsTest {
         ll.append(5);
 
         ListNode actual = ll.kthElementFromEnd(2);
-        ListNode expected = ll.root;
+        ListNode expected = ll.root.next.next;
 
         assertEquals(expected, actual);
 
@@ -67,7 +67,7 @@ class LinkedListsTest {
 
 
         ListNode actual = ll.kthElementFromEnd(10);
-        ListNode expected = ll.root;
+        ListNode expected = ll.root.next.next.next.next.next.next.next.next.next;
 
         assertEquals(expected, actual);
 
