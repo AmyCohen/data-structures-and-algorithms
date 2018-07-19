@@ -1,7 +1,5 @@
 package day08;
 
-import static java.lang.Integer.parseInt;
-
 public class LinkedList {
 
     public ListNode root;

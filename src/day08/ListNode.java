@@ -9,10 +9,4 @@ public class ListNode {
         this.data=value;
         this.next=null;
     }
-
-    public ListNode (LinkedList list){
-        this.value=value;
-        this.next=null;
-    }
-
 }
