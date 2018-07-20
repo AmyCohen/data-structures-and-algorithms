@@ -16,6 +16,11 @@ public class day09LinkedList {
         day09ListNode current2 = root.next.next;
         Boolean isLoop = false;
 
+//        if (current1.next == null) {
+//            isLoop = false;
+//            return isLoop;
+//        }
+
         while (current1 != null){
             current1 = current1.next;
             current2 = current2.next.next;

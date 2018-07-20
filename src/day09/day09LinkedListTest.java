@@ -55,4 +55,17 @@ class day09LinkedListTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void emptyList() {
+
+        day09LinkedList loopy = new day09LinkedList();
+
+
+        int actual = loopy.size();
+        int expected = 0;
+
+        assertEquals(expected, actual);
+    }
+
+
 }
