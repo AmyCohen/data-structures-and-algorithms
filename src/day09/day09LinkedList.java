@@ -13,13 +13,13 @@ public class day09LinkedList {
 
     public Boolean hasLoop () {
         day09ListNode current1 = root;
-        day09ListNode current2 = root.next.next;
+        day09ListNode current2 = root;
         Boolean isLoop = false;
 
-//        if (current1.next == null) {
-//            isLoop = false;
-//            return isLoop;
-//        }
+        if (current1.next == null) {
+            isLoop = false;
+            return isLoop;
+        }
 
         while (current1 != null){
             current1 = current1.next;
