@@ -11,7 +11,7 @@ public class day10LinkedList {
     public String reverseList () {
         day10LinkedList test = new day10LinkedList();
         day10ListNode current = this.root;
-        day10ListNode previous;
+        day10ListNode previous = this.root;
         day10ListNode next;
         int count = 0;
         while (current != null) {
@@ -19,14 +19,14 @@ public class day10LinkedList {
             count ++;
         }
         current = this.root;
-//        next =current.next;
 //        previous = current;
         for (int i = 0; i < count; i++) {
-            current = current.next;
             current.next = this.root;
-            test.append(current.next.data);
-        }
             this.root = current;
+//            current = previous;
+            test.append(previous.data);
+        }
+//            this.root = current;
 //            current = current.next;
 //        while (current.next != null) {
 //            current.next = root;
