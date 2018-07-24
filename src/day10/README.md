@@ -1,4 +1,4 @@
-# Identify a Circular Reference
+# Reverse a Linked List
 <!-- Short summary or background information -->
 Reverse a Linked List
 

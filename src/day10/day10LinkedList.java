@@ -8,35 +8,22 @@ public class day10LinkedList {
         this.root = null;
     }
 
-    public String reverseList () {
-        day10LinkedList test = new day10LinkedList();
+    //Followed GeeksforGeeks site as suggested in class.
+    //https://www.geeksforgeeks.org/reverse-a-linked-list/
+    public day10ListNode reverseList() {
         day10ListNode current = this.root;
-        day10ListNode previous = this.root;
-        day10ListNode next;
-        int count = 0;
+        day10ListNode previous = null;
+        day10ListNode next = null;
         while (current != null) {
-            current = current.next;
-            count ++;
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
         }
-        current = this.root;
-//        previous = current;
-        for (int i = 0; i < count; i++) {
-            current.next = this.root;
-            this.root = current;
-//            current = previous;
-            test.append(previous.data);
-        }
-//            this.root = current;
-//            current = current.next;
-//        while (current.next != null) {
-//            current.next = root;
-//            root = current;
-//            test.append(current.data);
-//        }
-//        root = next;
-        System.out.println(test.toString());
-        return test.toString();
+        root = previous;
+        return root;
     }
+
 
     public Boolean hasLoop () {
         day10ListNode current1 = root;
