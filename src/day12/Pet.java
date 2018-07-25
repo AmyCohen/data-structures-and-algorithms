@@ -10,7 +10,7 @@ public class Pet {
     }
 
     public String toString() {
-        return this.name + " " + this.sound;
+        return this.name;
     }
 
     public String sound() {

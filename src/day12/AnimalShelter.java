@@ -6,11 +6,11 @@ import java.util.Stack;
 
 public class AnimalShelter {
 
-    public Queue<Pet> shelter = new LinkedList<>();
-    public Stack<Pet> frontStack1 = new Stack<>();
-    public Stack<Pet> frontStack2 = new Stack<>();
-    public Stack<Pet> backStack1 = new Stack<>();
-    public Stack<Pet> backStack2 = new Stack<>();
+    private Queue<Pet> shelter = new LinkedList<>();
+    private Stack<Pet> frontStack1 = new Stack<>();
+    private Stack<Pet> frontStack2 = new Stack<>();
+    private Stack<Pet> backStack1 = new Stack<>();
+    private Stack<Pet> backStack2 = new Stack<>();
     public Pet animal;
 
 
@@ -19,6 +19,15 @@ public class AnimalShelter {
     }
 
     public Pet dequeue(String preference) {
+
+        if(shelter.isEmpty()) {
+            return null;
+        }
+
+        if(!shelter.contains(preference)) {
+            animal = null;
+            return animal;
+        }
 
         if (shelter.peek().toString() == preference){
             return shelter.poll();
@@ -50,5 +59,10 @@ public class AnimalShelter {
             }
         }
         return animal;
+    }
+
+    @Override
+    public String toString() {
+        return shelter.toString();
     }
 }
