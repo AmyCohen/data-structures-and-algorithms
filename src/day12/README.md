@@ -24,3 +24,12 @@ If a cat or dog isn’t preferred, return whichever animal has been waiting in t
 ## Solution
 <!-- Embedded whiteboard image -->
 Still having issues embedding images in the readme. Please see the assets folder.
+
+Page 1: 
+![Page1](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day12/assets/day12-page1 copy.jpg)
+
+Page 2: 
+![Page2](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day12/assets/day12-page2 copy.jpg)
+
+Page 3: 
+![Page3](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day12/assets/day12-page3 copy.jpg)
