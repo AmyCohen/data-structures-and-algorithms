@@ -23,8 +23,7 @@ public class AnimalShelter {
         if(shelter.isEmpty()) {
             return null;
         }
-
-        if(!shelter.contains(preference)) {
+        if(!shelter.toString().contains(preference)) {
             animal = null;
             return animal;
         }
