@@ -21,3 +21,11 @@ Write a function called multiBracketValidation.  Your function should take a str
 
 ## Solution
 <!-- Embedded whiteboard image -->
+Page 1: 
+![Page1](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day13/assets/day13-page1 copy.jpg)
+
+Page 2: 
+![Page2](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day13/assets/day13-page2 copy.jpg)
+
+Page 3: 
+![Page3](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day13/assets/day13-page3 copy.jpg)
