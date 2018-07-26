@@ -16,10 +16,11 @@ public class MultiBracketValidation {
         String closeSquare = "]";
         String openCurly = "{";
         String closeCurly = "}";
-        String holdChar;
 
+        String holdChar;
         String openPop = "";
         String closePop = "";
+
         Boolean isEqual = false;
 
         Stack<Character> s1 = new Stack<>();
@@ -31,7 +32,6 @@ public class MultiBracketValidation {
         for (int i = 0; i < input.length(); i++ ) {
             s1.push(input.charAt(i));
         }
-        System.out.println(s1.toString());
 
         while(!s1.isEmpty()) {
         holdChar = s1.pop().toString();
@@ -43,8 +43,6 @@ public class MultiBracketValidation {
             || holdChar.equals(closeCurly)
             ){
                 s2.push(holdChar);
-            } else {
-                s1.pop();
             }
         }
 
@@ -63,8 +61,7 @@ public class MultiBracketValidation {
         while(!s4.isEmpty()){
             s2.push(s4.pop());
         }
-        System.out.println("s2 = " + s2.toString());
-        System.out.println("s3 = " + s3.toString());
+
         while(!s3.isEmpty() && !s2.isEmpty()){
             openPop = s3.pop();
             closePop = s2.pop();
@@ -79,7 +76,6 @@ public class MultiBracketValidation {
                 isEqual = false;
             }
         }
-        System.out.println(isEqual);
         return isEqual;
     }
 }
