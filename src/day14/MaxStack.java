@@ -32,7 +32,7 @@ public class MaxStack extends Stack{
         while(!s2.isEmpty()) {
             s1.push(s2.pop());
         }
-        
+
         return highValue;
     }
 }
