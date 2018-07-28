@@ -1,4 +1,4 @@
-# Identify a Circular Reference
+# Make a Queue Out Of Two Stacks
 <!-- Short summary or background information -->
 Implement a Queue using two Stacks.
 
