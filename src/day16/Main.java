@@ -18,7 +18,7 @@ public class Main {
 //        String actual = fb.fizzBuzz(buzzy);
 //        System.out.println(actual);
         FizzBuzzTree.fizzBuzz(fb);
-        System.out.println(FizzBuzzTree.fizzBuzz(fb));
+//        System.out.println(FizzBuzzTree.fizzBuzz(fb));
 
     }
 }
