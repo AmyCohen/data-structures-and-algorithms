@@ -18,9 +18,37 @@ public class FizzBuzzTree {
 
     private static String fizBuzz(FizzBuzzTree tree, TreeNode current){
 
-//        if(current.left == null) {
+//        if (current.right == null || current.left == null) {
+//            if (current.data.equals("Fizz") || current.data.equals("Buzz") || current.data.equals("FizzBuzz")) {
+//                current = current.right;
+//            } else if (Integer.parseInt(current.data) % 15 == 0) {
+//                current.data = "FizzBuzz";
+//            } else if (Integer.parseInt(current.data) % 5 == 0) {
+//                current.data = "Buzz";
+//            } else if (Integer.parseInt(current.data) % 3 == 0) {
+//                current.data = "Fizz";
+//            } else {
+//                current = current.right;
+//            }
+//            current = root;
+//        }
+
+        if (current.left == null) {
+            if (current.data.equals("Fizz") || current.data.equals("Buzz") || current.data.equals("FizzBuzz")) {
+                current = current.right;
+            } else if (Integer.parseInt(current.data) % 15 == 0) {
+                current.data = "FizzBuzz";
+            } else if (Integer.parseInt(current.data) % 5 == 0) {
+                current.data = "Buzz";
+            } else if (Integer.parseInt(current.data) % 3 == 0) {
+                current.data = "Fizz";
+            } else {
+                current = current.right;
+            }
             current = root;
-            while (current.left != null) {
+        }
+
+        while (current.left != null) {
                 if (current.data.equals("Fizz") || current.data.equals("Buzz") || current.data.equals("FizzBuzz")) {
                     current = current.left;
                 } else if (Integer.parseInt(current.data) % 15 == 0) {
@@ -34,11 +62,28 @@ public class FizzBuzzTree {
                 }
             }
 //        }
+//        if(current.right == null) {
+//            current = root;
+//        }
+        if (current.right == null) {
+            if (current.left == null) {
+                if (current.data.equals("Fizz") || current.data.equals("Buzz") || current.data.equals("FizzBuzz")) {
+                    current = current.right;
+                } else if (Integer.parseInt(current.data) % 15 == 0) {
+                    current.data = "FizzBuzz";
+                } else if (Integer.parseInt(current.data) % 5 == 0) {
+                    current.data = "Buzz";
+                } else if (Integer.parseInt(current.data) % 3 == 0) {
+                    current.data = "Fizz";
+                } else {
+                    current = current.right;
+                }
+                current = root;
+            }
+        }
 
-        if(current.right == null) {
-            current = root;
 
-            while (current.right != null) {
+        while (current.right != null) {
                 if (current.data.equals("Fizz") || current.data.equals("Buzz") || current.data.equals("FizzBuzz")) {
                     current = current.right;
                 } else if (Integer.parseInt(current.data) % 15 == 0) {
@@ -51,7 +96,7 @@ public class FizzBuzzTree {
                     current = current.right;
                 }
             }
-        }
+
         return tree.toString();
     }
 
