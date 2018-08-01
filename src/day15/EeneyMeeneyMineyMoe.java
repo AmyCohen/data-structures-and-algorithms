@@ -1,25 +1,22 @@
 package day15;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
-public class EeneyMeeneyMineyMoe extends LinkedList{
+public class EeneyMeeneyMineyMoe extends LinkedList {
 
-    public String eeneyMeeneyMineyMoe(int n){
-        Queue<String> qq = new LinkedList<>();
-        qq = this;
+    public static String eeneyMeeneyMineyMoe(LinkedList<String> listOfNames, int n){
         int count = 0;
         String it;
 
-        while(qq.size() > 1) {
-            it = qq.poll();
+        while(listOfNames.size() > 1) {
+            it = listOfNames.poll();
             count++;
 
             if(count % n != 0) {
-                qq.add(it);
+                listOfNames.add(it);
             }
         }
 
-        return qq.toString();
+        return listOfNames.toString();
     }
 }

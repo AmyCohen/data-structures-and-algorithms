@@ -2,23 +2,25 @@ package day15;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import static day15.EeneyMeeneyMineyMoe.eeneyMeeneyMineyMoe;
 import static org.junit.jupiter.api.Assertions.*;
 
 class EeneyMeeneyMineyMoeTest{
 
     @Test
     void eeneyMeeneyMineyMoeParty() {
-    EeneyMeeneyMineyMoe musicalChairs = new EeneyMeeneyMineyMoe();
-        musicalChairs.add("Willie");
-        musicalChairs.add("Goldie");
-        musicalChairs.add("Billy");
-        musicalChairs.add("Rita Mae");
-        musicalChairs.add("Bobby Joe");
+        LinkedList<String> partiers = new LinkedList<>();
+        partiers.add("Willie");
+        partiers.add("Goldie");
+        partiers.add("Billy");
+        partiers.add("Rita Mae");
+        partiers.add("Bobby Joe");
 
-        String actual = musicalChairs.eeneyMeeneyMineyMoe(3);
+        String actual = eeneyMeeneyMineyMoe(partiers, 3);
         String expected = "[Rita Mae]";
 
         assertEquals(expected, actual);
@@ -26,9 +28,9 @@ class EeneyMeeneyMineyMoeTest{
 
     @Test
     void noParty() {
-        EeneyMeeneyMineyMoe musicalChairs = new EeneyMeeneyMineyMoe();
+        LinkedList<String> partiers = new LinkedList<>();
 
-        String actual = musicalChairs.eeneyMeeneyMineyMoe(3);
+        String actual = eeneyMeeneyMineyMoe(partiers,3);
         String expected = "[]";
 
         assertEquals(expected, actual);
@@ -36,25 +38,25 @@ class EeneyMeeneyMineyMoeTest{
 
     @Test
     void partyOfOne() {
-        EeneyMeeneyMineyMoe musicalChairs = new EeneyMeeneyMineyMoe();
-        musicalChairs.add("me");
+        LinkedList<String> partiers = new LinkedList<>();
+        partiers.add("me");
 
-        String actual = musicalChairs.eeneyMeeneyMineyMoe(3);
+        String actual = eeneyMeeneyMineyMoe(partiers,3);
         String expected = "[me]";
 
         assertEquals(expected, actual);
     }
 
     @Test
-    void eeneyMeeneyMineyMoePartyPooper() {
-        EeneyMeeneyMineyMoe musicalChairs = new EeneyMeeneyMineyMoe();
-        musicalChairs.add("Willie");
-        musicalChairs.add("Goldie");
-        musicalChairs.add("Billy");
-        musicalChairs.add("Rita Mae");
-        musicalChairs.add("Bobby Joe");
+    void PartyPooper() {
+        LinkedList<String> partiers = new LinkedList<>();
+        partiers.add("Willie");
+        partiers.add("Goldie");
+        partiers.add("Billy");
+        partiers.add("Rita Mae");
+        partiers.add("Bobby Joe");
 
-        String actual = musicalChairs.eeneyMeeneyMineyMoe(1);
+        String actual = eeneyMeeneyMineyMoe(partiers, 1);
         String expected = "[Bobby Joe]";
 
         assertEquals(expected, actual);
