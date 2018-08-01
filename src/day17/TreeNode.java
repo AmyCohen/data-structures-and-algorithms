@@ -10,7 +10,7 @@ public class TreeNode {
         this.data = value;
     }
     public String toString() {
-        return "" + this.data;
+        return ""+this.data;
     }
 
 }

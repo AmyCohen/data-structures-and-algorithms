@@ -17,17 +17,17 @@ public class BreadthFirstTraversal {
         return tree;
     }
 
-    private static void breadthTraversalHelper(TreeNode current){
+    private static String breadthTraversalHelper(TreeNode current){
         Queue<TreeNode> qq = new LinkedList<>();
         qq.add(root);
         if (current == null) {
-            return;
+            return qq.toString();
         }
 
         while(!qq.isEmpty()) {
         System.out.println("From top of while: " + qq.toString());
         current = qq.poll();
-        System.out.println(current + " ");
+        System.out.println(current);
 
         if (current.left != null) {
             qq.add(current.left);
@@ -37,32 +37,7 @@ public class BreadthFirstTraversal {
         }
 
         }
-
-//        qq.add(current.data);
-//        breadthTraversalHelper(current.left);
-//        breadthTraversalHelper(current.right);
-//
-//        System.out.println(qq.toString());
-
- ////////////////////
-//    if(current.left != null && current.right != null){
-//        qq.add(current.data);
-//        breadthTraversalHelper(current.left);
-//        breadthTraversalHelper(current.right);
-//    } else if (current.left == null) {
-//        qq.add(current.data);
-//        breadthTraversalHelper(current.right);
-//    } else if (current.right == null) {
-//        qq.add(current.data);
-//        breadthTraversalHelper(current.left);
-//    }
-
-        System.out.println("From long if conditional: " + qq.toString());
-
-
-
-
-
+        return qq.toString();
     }
 
 
