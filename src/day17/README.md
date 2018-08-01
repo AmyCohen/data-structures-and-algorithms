@@ -13,10 +13,9 @@ Breadth-first Traversal
 Testing was not required for this whiteboard since it was originally entered as an "Interview Whiteboard" but I completed tests to make sure the outcome was as expected.
 
 ## Solution
-<!-- Embedded whiteboard image 
+<!-- Embedded whiteboard image -->
 Page 1
-![Page 1](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day15/assets/day15-page1.jpg)
+![Page 1](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day17/assets/day17-page1 copy.jpg)
 
 Page 2
-![Page 2](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day15/assets/day15-page2.jpg)
--->
+![Page 2](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day17/assets/day17-page2 copy.jpg)
