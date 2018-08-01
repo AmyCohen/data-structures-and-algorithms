@@ -12,10 +12,9 @@ Conduct “FizzBuzz” on a tree while traversing through it. Change the values 
 Testing was not required for this whiteboard since it was originally entered as an "Interview Whiteboard" but I completed tests to make sure the outcome was as expected.
 
 ## Solution
-<!-- Embedded whiteboard image 
+<!-- Embedded whiteboard image -->
 Page 1
-![Page 1](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day15/assets/day15-page1.jpg)
+![Page 1](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day16/assets/day16-page1.jpg)
 
 Page 2
-![Page 2](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day15/assets/day15-page2.jpg)
--->
+![Page 2](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day16/assets/day16-page2.jpg)
