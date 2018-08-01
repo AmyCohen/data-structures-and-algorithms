@@ -13,6 +13,4 @@ public class TreeNode {
         return "" + this.data;
     }
 
-
-
 }

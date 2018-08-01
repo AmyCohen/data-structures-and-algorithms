@@ -13,12 +13,7 @@ public class Main {
         fb.add("1");
         fb.add("6");
 
-//        System.out.println(fb.toString());
-//        System.out.println(fb.fizzBuzz(buzzy));
-//        String actual = fb.fizzBuzz(buzzy);
-//        System.out.println(actual);
-        FizzBuzzTree.fizzBuzz(fb);
-//        System.out.println(FizzBuzzTree.fizzBuzz(fb));
+        FizzBuzzTree.fizzBuzz(fb).toString();
 
     }
 }
