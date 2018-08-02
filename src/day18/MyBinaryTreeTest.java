@@ -30,8 +30,8 @@ class MyBinaryTreeTest {
         n9.left = n4;
 
         MyBinaryTree.findMaximumValue(tree);
-        Integer actual = MyBinaryTree.findMaximumValue(tree);
-        Integer expected = 11;
+        String actual = MyBinaryTree.findMaximumValue(tree).toString();
+        String expected = "11";
 
         assertEquals(expected, actual);
 

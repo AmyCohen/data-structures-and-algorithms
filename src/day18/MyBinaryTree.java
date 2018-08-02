@@ -2,31 +2,47 @@ package day18;
 
 public class MyBinaryTree {
     public static TreeNode root;
+    private static Integer persistingData;
+    private static Integer maxFound;
 
-    public static Integer findMaximumValue(MyBinaryTree tree) {
-        return (maxFinder(root));
+
+    public static MyBinaryTree findMaximumValue(MyBinaryTree tree) {
+        maxFinder(tree.root);
+        return tree;
     }
 
     private static Integer maxFinder(TreeNode current) {
-//        Integer maxLeft;
-//        Integer maxRight;
-        Integer maxFound;
+        Integer currentData = current.data;
 
-//        if(current == null) {
+//        if (persistingData == null) {
 //            return null;
 //        }
-//        if (current.left != null) {
-//            maxLeft = maxFinder(current.left);
-//        }
-//        if (current.right != null) {
-//            maxRight = maxFinder(current.right);
-//        }
-        maxFound = Math.max(maxFinder(current.left), maxFinder(current.right));
-//        while (current != null) {
-//            maxFound = Math.max(maxFinder(current.left), maxFinder(current.right));
-//        }
-        System.out.println(maxFound.toString());
 
+        if (persistingData == null || persistingData < currentData) {
+            persistingData = currentData;
+        }
+        if (persistingData > currentData) {
+            maxFound = persistingData;
+        }
+
+//        persistingData = currentData;
+
+        if (current == null) {
+            return null;
+        }
+
+        while (currentData < maxFound) {
+            if (current.data > current.left.data) {
+            } else if (current.data > current.right.data) {
+                currentData = current.data;
+            } else if (current.data < current.left.data) {
+                currentData = current.left.data;
+            } else if (current.data < current.right.data) {
+                currentData = current.right.data;
+            }
+        }
+            maxFinder(current.left);
+            maxFinder(current.right);
         return maxFound;
     }
 }
