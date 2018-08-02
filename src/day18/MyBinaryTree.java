@@ -12,8 +12,12 @@ public class MyBinaryTree {
         return tree.root;
     }
 
+    /*
+    I finished this whiteboard with the help of https://www.geeksforgeeks.org/find-maximum-or-minimum-in-binary-tree/ when I got stuck. My original code was similar to their solution in that we were both looking to see if current was bigger than .left or .right, but my logic was messed up. I also ran into nullPointers and kept trying to get around them so my data would be pure and not take in an outside number, but I couldn't avoid setting it to MIN-VALUE to make it work.
+    */
     private static String maxFinder(TreeNode current) {
 
+        //cannot set this to null or nullPointerExceptions happen everywhere
         if (current == null) {
             return Integer.MIN_VALUE + "";
         }
@@ -26,38 +30,10 @@ public class MyBinaryTree {
             currentData = leftData;
         if (rightData > currentData)
             currentData = rightData;
+
+        //Since returning tree.root in the public function, set the tree's root to the largest value.
         tree.root.data = currentData;
         return tree.root.data.toString();
 
-//        if (persistingData == null || persistingData < currentData) {
-//            persistingData = currentData;
-//        }
-//        if (persistingData > currentData) {
-//            maxFound = persistingData;
-//        }
-
-//        persistingData = currentData;
-
-//        if (current == null) {
-//            return null;
-//        }
-
-//        while (currentData < maxFound) {
-//            if (current.data > current.left.data) {
-//            } else if (current.data > current.right.data) {
-//                currentData = current.data;
-//            } else if (current.data < current.left.data) {
-//                currentData = current.left.data;
-//            } else if (current.data < current.right.data) {
-//                currentData = current.right.data;
-//            }
-//        }
-
-//        Math.max(maxFinder(current.left), maxFinder(current.right));
-//        Math.max(maxFinder(current.left), maxFinder(current.right));
-
-//            maxFinder(current.left);
-//            maxFinder(current.right);
-//        return maxFound;
     }
 }

@@ -20,7 +20,7 @@ Find the Maximum Value in a Binary Tree
 ## Solution
 <!-- Embedded whiteboard image -->
 Page 1
-![Page 1]()
+![Page 1](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day18/assets/day18-page1.jpg)
 
 Page 2
-![Page 2]()
+![Page 2](/Users/amycohen/codefellows/401/whiteboard/data-structures-and-algorithms/src/day18/assets/day18-page2.jpg)
