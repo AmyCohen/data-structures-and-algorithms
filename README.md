@@ -17,5 +17,5 @@ Daily challenges to improve my usage of Java and the whiteboarding process. The 
 - Day 14: [Max Value In A Stack](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day14)
 - Day 15: [Eeney Meeney Minie Moe](https://github.com/AmyCohen/data-structures-and-algorithms/pull/25)
 - Day 16: [FizzBuzzTree](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day16)
-- Day 16: [Breadth-First Tree Traversal](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day17)
+- Day 17: [Breadth-First Tree Traversal](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day17)
 - Day 18: [Find Max Value in Binary Tree](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day18)
