@@ -19,3 +19,4 @@ Daily challenges to improve my usage of Java and the whiteboarding process. The 
 - Day 16: [FizzBuzzTree](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day16)
 - Day 17: [Breadth-First Tree Traversal](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day17)
 - Day 18: [Find Max Value in Binary Tree](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day18)
+- Day 19: [Determine If Two Binary Trees Are Identical](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day19)
