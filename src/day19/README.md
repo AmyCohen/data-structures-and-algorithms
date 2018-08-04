@@ -25,4 +25,4 @@ Page 1
 ![Page 1](/day19/assets/day19-page1.jpg)
 
 Page 2
-![Page 2](/day19/assets/day19-page2.jpg)
+![Page 2](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day19/assets/day19-page1.jpg)
