@@ -22,7 +22,7 @@ Trees are considered identical if nodes are in the same positions, and data valu
 ## Solution
 <!-- Embedded whiteboard image -->
 Page 1
-![Page 1]()
+![Page 1](/day19/assets/day19-page1.jpg)
 
 Page 2
-![Page 2]()
+![Page 2](/day19/assets/day19-page2.jpg)

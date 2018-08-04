@@ -8,10 +8,6 @@ public class MyBinaryTree {
     }
 
     private boolean checkingTree(TreeNode firstTreeNode, TreeNode secondTreeNode) {
-        System.out.println(firstTreeNode.data);
-        System.out.println(secondTreeNode.data);
-        boolean leftside = checkingTree(firstTreeNode.left, secondTreeNode.left);
-        boolean rightside = checkingTree(firstTreeNode.right, secondTreeNode.right);
 
         if (firstTreeNode == null && secondTreeNode == null) {
             return true;
@@ -22,6 +18,9 @@ public class MyBinaryTree {
         if (firstTreeNode.data != secondTreeNode.data) {
             return false;
         }
+
+        boolean leftside = checkingTree(firstTreeNode.left, secondTreeNode.left);
+        boolean rightside = checkingTree(firstTreeNode.right, secondTreeNode.right);
 
         return leftside && rightside;
 
