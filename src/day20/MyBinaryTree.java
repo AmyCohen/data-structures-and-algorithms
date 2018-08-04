@@ -38,8 +38,9 @@ public class MyBinaryTree {
             //use the value stored to replace the value on the left
             current.left = newLeft;
         }
-        flipHelper(current.right);
+
         flipHelper(current.left);
+        flipHelper(current.right);
 
 
 
