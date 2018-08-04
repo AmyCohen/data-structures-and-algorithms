@@ -1,16 +1,16 @@
 package day19;
 
 public class TreeNode {
-    public  TreeNode left;
-    public  TreeNode right;
-    public Integer data;
+    public int data;
+    public TreeNode left;
+    public TreeNode right;
 
     public TreeNode (int value) {
         this.data = value;
     }
 
-//    public String toString () {
-//        return this.data.toString();
-//    }
+    public String toString () {
+        return String.valueOf(this.data);
+    }
 
 }

@@ -2,29 +2,28 @@ package day19;
 
 public class MyBinaryTree {
     public TreeNode root;
-    private TreeNode firstTreeNode;
-    private TreeNode secondTreeNode;
-    private int firstTreeData;
-    private int secondTreeData;
 
-
-    public boolean isIdentical(MyBinaryTree tree) {
-        Boolean isTheSame = checkingTree(tree, firstTreeNode, secondTreeNode, firstTreeData, secondTreeData);
-        return isTheSame;
+    public boolean isIdentical(MyBinaryTree scuba) {
+        return this.checkingTree(this.root, scuba.root);
     }
 
-    private boolean checkingTree(MyBinaryTree tree, TreeNode firstTreeNode, TreeNode secondTreeNode, int firstTreeData, int secondTreeData) {
-        Boolean isTrue = false;
-        firstTreeNode = tree.root;
-        secondTreeNode = this.root;
+    private boolean checkingTree(TreeNode firstTreeNode, TreeNode secondTreeNode) {
+        System.out.println(firstTreeNode.data);
+        System.out.println(secondTreeNode.data);
+        boolean leftside = checkingTree(firstTreeNode.left, secondTreeNode.left);
+        boolean rightside = checkingTree(firstTreeNode.right, secondTreeNode.right);
 
-        checkingTree(tree, firstTreeNode.left, secondTreeNode.left, firstTreeData, secondTreeData);
-        checkingTree(tree, firstTreeNode.right, secondTreeNode.right, firstTreeData, secondTreeData);
-
-        if (firstTreeData == secondTreeData && firstTreeNode == secondTreeNode) {
-            isTrue = true;
+        if (firstTreeNode == null && secondTreeNode == null) {
+            return true;
+        }
+        if (firstTreeNode == null && secondTreeNode != null) {
+            return false;
+        }
+        if (firstTreeNode.data != secondTreeNode.data) {
+            return false;
         }
 
-        return isTrue;
+        return leftside && rightside;
+
     }
 }
