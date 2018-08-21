@@ -19,11 +19,10 @@ Find the first repeated word in a book.
 ## Solution
 <!-- Embedded whiteboard image -->
 Page 1
-<!-- 
-![Page 1](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day20/assets/day20-page1.jpg)
--->
+
+![Problem Domain](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day31/assets/problem_domain.jpg)
+
 
 Page 2
-<!-- 
-![Page 2](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day20/assets/day20-page2.jpg)
--->
+
+![Solution](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day31/assets/solution.jpg)
