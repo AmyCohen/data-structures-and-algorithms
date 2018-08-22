@@ -19,18 +19,16 @@ public class TreeIntersection {
 //        return matchingNumbers;
     }
 
-    private static List<TreeNode> treeIntersectionHelper(TreeNode current1, TreeNode current2){
+    private static List<Integer> treeIntersectionHelper(TreeNode current1, TreeNode current2){
 
 
         TreeNode leftValue;
         TreeNode rightValue;
 //        TreeNode current;
         Queue<TreeNode> traversing = new LinkedList<>();
-        Queue<TreeNode> firstTreeOutput = new LinkedList<>();
-        Queue<TreeNode> secondTreeOutput = new LinkedList<>();
-
-        List<TreeNode> matchingNumbers = new ArrayList<>();
-
+        List<Integer> firstTreeOutput = new ArrayList<>();
+        List<Integer> secondTreeOutput = new ArrayList<>();
+        List<Integer> matchingNumbers = new ArrayList<>();
 
         if (current1 == null || current2 == null) {
             return null;
@@ -40,7 +38,7 @@ public class TreeIntersection {
 
         while(!traversing.isEmpty()) {
             current1 = traversing.poll();
-            firstTreeOutput.add(current1);
+            firstTreeOutput.add(current1.data);
             if (current1.left != null) {
                 traversing.add(current1.left);
             }
@@ -54,7 +52,7 @@ public class TreeIntersection {
 
         while(!traversing.isEmpty()) {
             current2 = traversing.poll();
-            secondTreeOutput.add(current2);
+            secondTreeOutput.add(current2.data);
             if (current2.left != null) {
                 traversing.add(current2.left);
             }
@@ -65,10 +63,13 @@ public class TreeIntersection {
 
         System.out.println(secondTreeOutput.toString());
 
-        for (TreeNode node : firstTreeOutput) {
+        for (int node : firstTreeOutput) {
+            System.out.println(node);
             if (secondTreeOutput.contains(node)) {
+                System.out.println("does this even get hit?");
                 matchingNumbers.add(node);
             }
+//            System.out.println(node);
         }
         System.out.println(matchingNumbers.toString());
 
