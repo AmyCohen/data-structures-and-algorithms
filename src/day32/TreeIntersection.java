@@ -10,13 +10,10 @@ public class TreeIntersection {
 
     public static TreeNode root1;
     public static TreeNode root2;
-//    public TreeNode current;
 
-    public static int treeIntersection(TreeIntersection tree1, TreeIntersection tree2) {
-//        List<TreeNode> matchingNumbers = new ArrayList<>();
+    public static List<Integer> treeIntersection(TreeIntersection tree1, TreeIntersection tree2) {
 
-        return treeIntersectionHelper(tree1.root1, tree2.root2).size();
-//        return matchingNumbers;
+        return treeIntersectionHelper(tree1.root1, tree2.root2);
     }
 
     private static List<Integer> treeIntersectionHelper(TreeNode current1, TreeNode current2){
@@ -64,12 +61,9 @@ public class TreeIntersection {
         System.out.println(secondTreeOutput.toString());
 
         for (int node : firstTreeOutput) {
-            System.out.println(node);
             if (secondTreeOutput.contains(node)) {
-                System.out.println("does this even get hit?");
                 matchingNumbers.add(node);
             }
-//            System.out.println(node);
         }
         System.out.println(matchingNumbers.toString());
 
