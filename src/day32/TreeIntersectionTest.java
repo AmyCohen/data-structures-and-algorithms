@@ -21,7 +21,7 @@ class TreeIntersectionTest {
         TreeNode n10 = new TreeNode(10);
         TreeNode n6= new TreeNode(6);
 
-        tree1.root = n5;
+        tree1.root1 = n5;
         n5.left = n7;
         n5.right = n2;
         n7.left = n8;
@@ -38,7 +38,7 @@ class TreeIntersectionTest {
         TreeNode num12 = new TreeNode(12);
         TreeNode num13 = new TreeNode(13);
 
-        tree2.root = num10;
+        tree2.root2 = num10;
         num10.left = num1;
         num10.right = num88;
         num1.right = num21;
@@ -46,8 +46,8 @@ class TreeIntersectionTest {
         num88.right = num13;
 
 
-        List<TreeNode> actual = treeIntersection(tree1, tree2);
-        String expected = "[12, 1, 10]";
+        int actual = treeIntersection(tree1, tree2);
+        int expected = 3;
 
         assertEquals(expected, actual);
     }
