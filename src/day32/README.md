@@ -17,12 +17,11 @@ Find common values in 2 binary trees.
 
 ## Solution
 <!-- Embedded whiteboard image -->
-<!--
+
 Page 1
-![Problem Domain](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day31/assets/problem_domain.jpg)
+![Problem Domain](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day32/assets/problem_domain.jpg)
 
 
 Page 2
 
-![Solution](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day31/assets/solution.jpg)
--->
+![Solution](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day32/assets/solution.jpg)
