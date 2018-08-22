@@ -22,3 +22,4 @@ Daily challenges to improve my usage of Java and the whiteboarding process. The 
 - Day 19: [Determine If Two Binary Trees Are Identical](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day19)
 - Day 20: [Flip A Binary Tree](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day20)
 - Day 31: [Find First Repeated Word](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day31)
+- Day 32: [Find Intersecting Binary Trees](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day32)
