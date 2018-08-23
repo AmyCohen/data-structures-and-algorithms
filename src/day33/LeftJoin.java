@@ -4,7 +4,7 @@ import java.util.*;
 
 public class LeftJoin {
 
-    public static String leftJoin (Map<String, String> map1, Map<String, String> map2){
+    public static Map<String, List<Object>> leftJoin (Map<String, String> map1, Map<String, String> map2){
 
         Map<String, List<Object>> joinedMap = new HashMap<>();
 
@@ -21,6 +21,6 @@ public class LeftJoin {
             }
         }
         System.out.println(joinedMap);
-        return joinedMap.toString();
+        return joinedMap;
     }
 }
