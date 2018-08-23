@@ -1,43 +1,26 @@
 package day33;
 
-import java.util.Arrays;
-import java.util.Map;
+import java.util.*;
 
 public class LeftJoin {
 
     public static String leftJoin (Map<String, String> map1, Map<String, String> map2){
-        int arrayCount = 0;
-        int count = 0;
-        String[] row = new String[3];
-        String[] insertRow = new String[3];
-        MyMap<String, String, String> joinedMap = new MyMap<>();
 
-        for (Object key : map1.keySet()){
-            System.out.println("Key = " + key);
+        Map<String, List<Object>> joinedMap = new HashMap<>();
 
+
+        for (String key : map1.keySet()) {
+        List<Object> newValues = new ArrayList<>();
             if (map2.containsKey(key)) {
-                arrayCount++;
+                joinedMap.put(key, newValues);
+
+            newValues.add(map1.get(key));
+                System.out.println("map 1 value = " + map1.get(key));
+            newValues.add(map2.get(key));
+                System.out.println("map 2 value = " + map2.get(key));
             }
-            }
-
-        String[][] rowSet = new String[arrayCount][3];
-
-        for (Object key : map1.keySet()){
-            System.out.println("Key = " + key);
-
-            if (map2.containsKey(key)) {
-                System.out.println("Key " + key.toString().toUpperCase() + " was contained in Map 2");
-                count++;
-                row[0] = key.toString();
-                row[1] = map1.get(key);
-                row[2] = map2.get(key);
-                System.out.println("count = " + count);
-                insertRow = row;
-                rowSet[count-1] = insertRow;
-                System.out.println(Arrays.deepToString(rowSet));
-                }
-            }
-
-        return Arrays.deepToString(rowSet);
+        }
+        System.out.println(joinedMap);
+        return joinedMap.toString();
     }
 }
