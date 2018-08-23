@@ -6,24 +6,39 @@ import java.util.Map;
 public class LeftJoin {
 
     public static String leftJoin (Map<String, String> map1, Map<String, String> map2){
-
+        int count = 0;
         String[] row = new String[3];
-        String[][] rowSet = new String[1][row.length];
         MyMap<String, String, String> joinedMap = new MyMap<>();
-        System.out.println("keyset = " + map1.keySet());
-        for (String key : map1.keySet()){
 
-            if (map2.containsKey(key)){
-                for (int i = 0; i < map1.size()-1; i++) {
-                    row[0] = key;
-                    row[1] = map1.get(key);
-                    row[2] = map2.get(key);
-                    rowSet[i] = row;
+        for (Object key : map1.keySet()){
+            System.out.println("Key = " + key);
+
+            if (map2.containsKey(key)) {
+                System.out.println("Key " + key.toString().toUpperCase() + " was contained in Map 2");
+                count++;
+        String[][] rowSet = new String[count][row.length];
+                row[0] = key.toString();
+                row[1] = map1.get(key);
+                row[2] = map2.get(key);
+                System.out.println("count = " + count);
+                rowSet[count-1] = row;
+                System.out.println(Arrays.toString(row));
                     System.out.println(Arrays.deepToString(rowSet));
-                }
             }
         }
+//        for (Object key : map1.keySet()){
+//            System.out.println("Key = " + key);
+//
+//            if (map2.containsKey(key)) {
+//                count++;
 
-        return "";
+//            }
+//        }
+
+
+
+
+
+        return Arrays.toString(row);
     }
 }
