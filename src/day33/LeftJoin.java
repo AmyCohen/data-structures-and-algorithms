@@ -9,6 +9,7 @@ public class LeftJoin {
         int arrayCount = 0;
         int count = 0;
         String[] row = new String[3];
+        String[] insertRow = new String[3];
         MyMap<String, String, String> joinedMap = new MyMap<>();
 
         for (Object key : map1.keySet()){
@@ -19,7 +20,7 @@ public class LeftJoin {
             }
             }
 
-        String[][] rowSet = new String[arrayCount][row.length];
+        String[][] rowSet = new String[arrayCount][3];
 
         for (Object key : map1.keySet()){
             System.out.println("Key = " + key);
@@ -31,24 +32,12 @@ public class LeftJoin {
                 row[1] = map1.get(key);
                 row[2] = map2.get(key);
                 System.out.println("count = " + count);
-                rowSet[count-1] = row;
-                System.out.println(Arrays.toString(row));
+                insertRow = row;
+                rowSet[count-1] = insertRow;
                 System.out.println(Arrays.deepToString(rowSet));
+                }
             }
-        }
-//        for (Object key : map1.keySet()){
-//            System.out.println("Key = " + key);
-//
-//            if (map2.containsKey(key)) {
-//                count++;
 
-//            }
-//        }
-
-
-
-
-
-        return Arrays.toString(row);
+        return Arrays.deepToString(rowSet);
     }
 }
