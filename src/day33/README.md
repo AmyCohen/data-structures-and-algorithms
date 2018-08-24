@@ -25,10 +25,6 @@ Implement a simplified LEFT JOIN for 2 Hashmaps.
 ## Solution
 <!-- Embedded whiteboard image -->
 
-Page 1
-![Problem Domain](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day33/assets/problem_domain.jpg)
-
-
-Page 2
+Soluton
 
 ![Solution](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day33/assets/solution.jpg)
