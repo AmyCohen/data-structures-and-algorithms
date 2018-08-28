@@ -32,24 +32,33 @@ sadly unhelpful
         int middle = (int) Math.floor(unsorted.size() / 2);
         System.out.println("middle = " + middle);
 
+
+//        while(sorted.size() < unsorted.size()) {
+//            for( int index : firstHalf) {
+//                if (index < secondtHalf.get())
+//            }
+//        }
+
         firstHalf = unsorted.subList(0, middle);
         System.out.println(firstHalf);
         secondtHalf = unsorted.subList(middle, unsorted.size());
         System.out.println(secondtHalf);
 
-        while(sorted.size() < unsorted.size()) {
-            for (int i = 0; i < firstHalf.size(); i++) {
-                for (int j = 0; j < secondtHalf.size(); j++) {
-                    if (firstHalf.get(i) > secondtHalf.get(j)) {
-                        sorted.add(secondtHalf.get(j));
-                        System.out.println(sorted);
-                    } else {
-                        sorted.add(firstHalf.get(i));
-                        System.out.println(sorted);
-                    }
-                }
-            }
-        }
+//        while(sorted.size() < unsorted.size()) {
+//            for (int i = 0; i < firstHalf.size(); i++) {
+//                for (int j = 0; j < secondtHalf.size(); j++) {
+//                    if (firstHalf.get(i) > secondtHalf.get(j)) {
+//                        sorted.add(secondtHalf.get(j));
+//                        System.out.println(sorted);
+//                    } else {
+//                        sorted.add(firstHalf.get(i));
+//                        System.out.println(sorted);
+//                    }
+//                }
+//            }
+//        }
+
+
 
 //        if (left < right) {
             // Find the middle point
