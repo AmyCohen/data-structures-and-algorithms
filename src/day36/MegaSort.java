@@ -20,7 +20,11 @@ public class MegaSort {
 
         megaSort(unsorted);
     }
-    public static List<Integer> megaSort (List<Integer> unsorted) {
+/*
+https://www.geeksforgeeks.org/merge-sort/
+sadly unhelpful
+ */
+    public static List<Integer> megaSort(List<Integer> unsorted) {
         List<Integer> sorted = new ArrayList<>();
         List<Integer> firstHalf = new ArrayList<>();
         List<Integer> secondtHalf = new ArrayList<>();
@@ -31,42 +35,112 @@ public class MegaSort {
         firstHalf = unsorted.subList(0, middle);
         secondtHalf = unsorted.subList(middle, unsorted.size());
 
-        System.out.println("first half = " + firstHalf);
-        System.out.println("second half = " + secondtHalf);
-        System.out.println("unsorted = " + unsorted);
+//        if (left < right) {
+            // Find the middle point
+//            int m = (left + right) / 2;
 
-        List<Integer> left = firstHalf;
-        List<Integer> right = secondtHalf;
-
-            while (left.size() > 1) {
-                left = (megaSort(firstHalf));
-                System.out.println("left split = " + left);
-                rejoin(left);
-                System.out.println("left joined = " + left);
-            }
-            while (right.size() > 1) {
-                right = megaSort(secondtHalf);
-                System.out.println("right split = " + right);
-                rejoin(right);
-                System.out.println("right joined = " + right);
-            }
-//            sorted.addAll(left);
-//            sorted.addAll(right);
-
-        System.out.println("sorted = " + sorted);
+            // Sort first and second halves
+//            megaSort(arr, l, m);
+//            megaSort(arr, m + 1, r);
+        while (firstHalf.size() > 0) {
+            megaSort(firstHalf);
+            System.out.println("first half = " + firstHalf);
+        }
+        while(secondtHalf.size() > 1) {
+            megaSort(secondtHalf);
+            System.out.println("second half = " + secondtHalf);
+        }
+            // Merge the sorted halves
+//            merge(arr);
+//        }
         return sorted;
     }
+        // Merges two subarrays of arr[].
+        // First subarray is arr[l..m]
+        // Second subarray is arr[m+1..r]
+        public static void merge (List<Integer> unsorted){
+            List<Integer> sorted = new ArrayList<>();
+            List<Integer> firstHalf = new ArrayList<>();
+            List<Integer> secondtHalf = new ArrayList<>();
 
-    private static List<Integer> rejoin (List<Integer> splitArray) {
-        List<Integer> sortingArray = new ArrayList<>();
+            int middle = (int) Math.floor(unsorted.size() / 2);
+            System.out.println("middle = " + middle);
 
-        for (int i = 0; i < splitArray.size()-1; i++) {
-            if (splitArray.get(i) < splitArray.get(i + 1)) {
-                sortingArray.add(splitArray.get(i));
+            firstHalf = unsorted.subList(0, middle);
+            secondtHalf = unsorted.subList(middle, unsorted.size());
+
+///////////////
+// I already account for this with my firstHalf and secondHalf arraylists that are sublisted using the middle and the array size
+            // Find sizes of two subarrays to be merged
+//            int n1 = m - l + 1;
+//            int n2 = r - m;
+
+            /* Create temp arrays */
+//            int L[] = new int[n1];
+//            int R[] = new int[n2];
+
+            /*Copy data to temp arrays*/
+//            for (int i = 0; i < n1; ++i)
+//                L[i] = arr[l + i];
+//            for (int j = 0; j < n2; ++j)
+//                R[j] = arr[m + 1 + j];
+///////////////
+
+            /* Merge the temp arrays */
+
+            // Initial indexes of first and second subarrays
+            int i = 0, j = 0;
+
+            // Initial index of merged subarry array
+//            int k = l;
+
+            while (i < firstHalf.size() && j < secondtHalf.size()) {
+                if (firstHalf.get(i) <= secondtHalf.get(j)) {
+//                    arr[k] = L[i];
+                    System.out.println(sorted.add(firstHalf.get(i)));
+                    sorted.add(firstHalf.get(i));
+                    i++;
+                } else {
+//                    arr[k] = R[j];
+                    System.out.println(sorted.add(secondtHalf.get(j)));
+                    sorted.add(secondtHalf.get(j));
+                    j++;
+                }
+//                k++;
             }
 
+            /* Copy remaining elements of L[] if any */
+            while (i < firstHalf.size()) {
+//                arr[k] = L[i];
+                sorted.add(firstHalf.get(i));
+                i++;
+//                k++;
+            }
 
+            /* Copy remaining elements of R[] if any */
+            while (j < secondtHalf.size()) {
+//                arr[k] = R[j];
+                sorted.add(secondtHalf.get(j));
+                j++;
+//                k++;
+            }
         }
-        return sortingArray;
-    }
+
+        // Main function that sorts arr[l..r] using
+        // merge()
+//        void sort ( int arr[], int l, int r)
+//        {
+//            if (l < r) {
+//                // Find the middle point
+//                int m = (l + r) / 2;
+//
+//                // Sort first and second halves
+//                sort(arr, l, m);
+//                sort(arr, m + 1, r);
+//
+//                // Merge the sorted halves
+//                merge(arr, l, m, r);
+//            }
+//        }
+
 }
