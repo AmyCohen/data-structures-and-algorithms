@@ -60,7 +60,7 @@ public class SelectionSort {
         System.out.println("sorted array = " + Arrays.toString(arr));
         System.out.println("array size = " + arr.length);
         long delta = System.currentTimeMillis() - start;
-        System.out.println("milliseconds = " + delta);
+        System.out.println("milliseconds = " + delta + "\n");
         return arr;
     }
 }
