@@ -5,8 +5,11 @@ import java.util.Random;
 
 public class SelectionSort {
     public static void main(String[] args) {
+        double[] arrayOne = randomN(5);
+        double[] arrayTwo = arrayOne;
 //        randomN();
-        selectionSort(randomN(5));
+        selectionSort(arrayOne);
+        selectionSort(arrayTwo);
 
     }
 
@@ -20,20 +23,19 @@ public class SelectionSort {
             randomSizedArray[i] = dd;
         }
 
-        System.out.println("random array = " + Arrays.toString(randomSizedArray));
+        System.out.println("random array = " + Arrays.toString(randomSizedArray) + "\n");
         return randomSizedArray;
     }
 
     public static double[] copyRandomizedArray(double[] copiedArray) {
-        double[] toCopy = new double[copiedArray.length];
-        toCopy = copiedArray;
+        double[] toCopy = copiedArray;
         return toCopy;
     }
 
     //taken from https://www.geeksforgeeks.org/selection-sort/
     public static double[] selectionSort (double[] arr) {
         int size = arr.length;
-
+        long start = System.currentTimeMillis();
         //moving the boundary of the sorted array
         for (int i = 0; i < size-1; i++) {
 
@@ -56,7 +58,9 @@ public class SelectionSort {
         }
 
         System.out.println("sorted array = " + Arrays.toString(arr));
-        System.out.println("" + arr.length);
+        System.out.println("array size = " + arr.length);
+        long delta = System.currentTimeMillis() - start;
+        System.out.println("milliseconds = " + delta);
         return arr;
     }
 }
