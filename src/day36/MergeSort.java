@@ -22,7 +22,7 @@ Steve's solution from lecture.
     public static int[] mergeSort(int[] unsorted) {
 
         //If the array is less than 2 (meaning 1 or 0, then it is by default already sorted and an just be returned.
-        if (unsorted.length < 2) {
+        if (unsorted.length < 2 || unsorted.length == 0) {
             return unsorted;
         }
 
@@ -40,33 +40,52 @@ Steve's solution from lecture.
     }
 
     public static int[] rightSide(int[] unsorted) {
-        int half;
-        int size = unsorted.length;
+        double size = unsorted.length;
 
-        if (unsorted.length % 2 == 0) {
-            half = unsorted.length/2;
-        } else {
-            half = (int) Math.ceil((double) size / 2);
+        if (unsorted.length < 2) {
+            return unsorted;
         }
 
-        int[] right = new int[half];
+        double half;
+        if (size/2 == 1) {
+            half = 1;
+        } else if ((size/2) % 2 == 0) {
+            half = size/2;
+        } else {
+            half = Math.floor(size/2+1);
+        }
 
-        for (int i = 0; i < half; i++){
-            right[i] = unsorted[half-1+i];
+        int [] right = new int[(int) half];
+
+        double index;
+        if (half % 2 == 0) {
+            index = half;
+        } else if (half == 1) {
+            index = 0;
+        } else {
+            index = half - 1;
+        }
+
+        int counter = 0;
+        for (int i = (int) index; i < unsorted.length; i++){
+            right[counter] = unsorted[i];
+            if (unsorted.length > 2) {
+                counter++;
+            }
         }
         System.out.println("right array = " + Arrays.toString(right));
         return right;
-
     }
 
     public static int[] leftSide(int[] unsorted) {
         int half;
 
-        if (unsorted.length % 2 == 0) {
-            half = unsorted.length/2;
-        } else {
-            half = (int) Math.floor(unsorted.length / 2);
+        if (unsorted.length < 2) {
+            return unsorted;
         }
+
+        half = (int) Math.floor(unsorted.length / 2);
+
 
         int[] left = new int[half];
 

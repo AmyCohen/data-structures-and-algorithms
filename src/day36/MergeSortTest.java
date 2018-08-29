@@ -23,12 +23,12 @@ class MergeSortTest {
 
         assertEquals(expected, actual);
     }
-
-    @Test
-    void rightSide() {
-    }
-
-    @Test
-    void leftSide() {
-    }
+//
+//    @Test
+//    void rightSide() {
+//    }
+//
+//    @Test
+//    void leftSide() {
+//    }
 }
