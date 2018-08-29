@@ -47,8 +47,11 @@ Steve's solution from lecture.
         //while the leftSide array will always be the floored version of half, the rightSide array has to account for the fact that the original array may not have been even. So it rounds up to the number that is the original size divided by 2.
 //        int[] rightSide = new int[(int) Math.ceil((double) size / 2)];
 
-        int[] leftSide = leftSide(unsorted);
-        int[] rightSide = rightSide(unsorted);
+//        int[] leftSide = leftSide(unsorted);
+//        int[] rightSide = rightSide(unsorted);
+
+        int[] leftSide = unsorted;
+        int[] rightSide = unsorted;
 
 //        for (int i = 0; i < half; i++) {
 //            //populate the left side array by counting up from index 0

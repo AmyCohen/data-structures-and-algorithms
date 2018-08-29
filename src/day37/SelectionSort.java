@@ -5,21 +5,58 @@ import java.util.Random;
 
 public class SelectionSort {
     public static void main(String[] args) {
-        randomN();
+//        randomN();
+        selectionSort(randomN(5));
+
     }
 
-    public static void randomN() {
-        double[] tenThousandArrayOne = new double[10_000];
-        double[] tenThousandArrayTwo = new double[10_000];
+    public static double[] randomN(int size) {
+        double[] randomSizedArray = new double[size];
+//        double[] tenThousandArrayTwo = new double[10_000];
         Random r = new Random();
 
-        for (int i = 0; i < 10_000; i++) {
+        for (int i = 0; i < size; i++) {
         double dd = r.nextDouble();
-            tenThousandArrayOne[i] = dd;
-            tenThousandArrayTwo[i] = dd;
-
+            randomSizedArray[i] = dd;
         }
-        System.out.println(Arrays.toString(tenThousandArrayOne));
-        System.out.println(Arrays.toString(tenThousandArrayTwo));
+
+        System.out.println("random array = " + Arrays.toString(randomSizedArray));
+        return randomSizedArray;
+    }
+
+    public static double[] copyRandomizedArray(double[] copiedArray) {
+        double[] toCopy = new double[copiedArray.length];
+        toCopy = copiedArray;
+        return toCopy;
+    }
+
+    //taken from https://www.geeksforgeeks.org/selection-sort/
+    public static double[] selectionSort (double[] arr) {
+        int size = arr.length;
+
+        //moving the boundary of the sorted array
+        for (int i = 0; i < size-1; i++) {
+
+            int minIndex = i;
+
+            for (int j = i+1; j < size; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            // Swap the found minimum element with the first element
+            //hold reference to the minIndex value in the temp variable
+            double temp = arr[minIndex];
+
+            //change the value at the minIndex place in the array to the value that is in the arr at i. This could be the same value it already was or the new value that j gave it in the inner for loop.
+            arr[minIndex] = arr[i];
+
+            //change the array at the actual index to the temp value
+            arr[i] = temp;
+            }
+        }
+
+        System.out.println("sorted array = " + Arrays.toString(arr));
+        System.out.println("" + arr.length);
+        return arr;
     }
 }
