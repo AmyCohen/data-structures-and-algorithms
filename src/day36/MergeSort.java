@@ -50,8 +50,8 @@ Steve's solution from lecture.
 //        int[] leftSide = leftSide(unsorted);
 //        int[] rightSide = rightSide(unsorted);
 
-        int[] leftSide = unsorted;
-        int[] rightSide = unsorted;
+        int[] leftSide = leftSide(unsorted);
+        int[] rightSide = rightSide(unsorted);
 
 //        for (int i = 0; i < half; i++) {
 //            //populate the left side array by counting up from index 0
@@ -71,7 +71,34 @@ Steve's solution from lecture.
 
         //set the return value to be the answer from the helperfuntion called "stitch"
         int[] result = merge(leftSide, rightSide);
+        System.out.println("Result = " + Arrays.toString(result));
         return result;
+    }
+
+    private static int[] rightSide(int[] unsorted) {
+        int size = unsorted.length;
+        int half = (int) Math.ceil((double) size / 2);
+
+        int[] right = new int[half];
+
+        for (int i = 0; i < half; i++){
+            right[i] = unsorted[half-1+i];
+        }
+        System.out.println("right array = " + Arrays.toString(right));
+        return right;
+
+    }
+
+    private static int[] leftSide(int[] unsorted) {
+        int half = (int)Math.floor(unsorted.length/2);
+
+        int[] left = new int[half];
+
+        for (int i = 0; i < half; i++){
+            left[i] = unsorted[i];
+        }
+        System.out.println("left array = " + Arrays.toString(left));
+        return left;
     }
 
     private static int[] merge (int[] left, int[] right) {
