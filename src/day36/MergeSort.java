@@ -42,28 +42,29 @@ Steve's solution from lecture.
     public static int[] rightSide(int[] unsorted) {
         double size = unsorted.length;
 
-        if (unsorted.length < 2) {
+        if (size < 2) {
             return unsorted;
         }
 
-        double half;
-        if (size/2 == 1) {
-            half = 1;
-        } else if ((size/2) % 2 == 0) {
-            half = size/2;
+        double length;
+        double half = size/2;
+        if (half == 1) {
+            length = 1;
+        } else if (half % 2 == 0) {
+            length = half;
         } else {
-            half = Math.floor(size/2+1);
+            length = Math.floor(half+1);
         }
 
-        int [] right = new int[(int) half];
+        int [] right = new int[(int) length];
 
         double index;
-        if (half % 2 == 0) {
-            index = half;
-        } else if (half == 1) {
-            index = 0;
+        if (length % 2 == 0) {
+            index = length;
+        } else if (length == 1) {
+            index = 1;
         } else {
-            index = half - 1;
+            index = length - 1;
         }
 
         int counter = 0;
