@@ -39,38 +39,39 @@ Steve's solution from lecture.
         return result;
     }
 
-    public static int[] rightSide(int[] unsorted) {
-        double size = unsorted.length;
+    public static int[] rightSide(int[] unsortedArray) {
+        double sizeOfUnsortedArray = unsortedArray.length;
 
-        if (size < 2) {
-            return unsorted;
+        if (sizeOfUnsortedArray < 2) {
+            return unsortedArray;
         }
 
-        double length;
-        double half = size/2;
-        if (half == 1) {
-            length = 1;
-        } else if (half % 2 == 0) {
-            length = half;
+        double lengthOfNewArray;
+        double halfOfUnsortedArray = sizeOfUnsortedArray/2;
+        if (halfOfUnsortedArray == 1) {
+            lengthOfNewArray = 1;
+        } else if (halfOfUnsortedArray % 2 == 0) {
+            lengthOfNewArray = halfOfUnsortedArray;
         } else {
-            length = Math.floor(half+1);
+            lengthOfNewArray = Math.floor(halfOfUnsortedArray+1);
         }
 
-        int [] right = new int[(int) length];
+        int [] right = new int[(int) lengthOfNewArray];
 
         double index;
-        if (length % 2 == 0) {
-            index = length;
-        } else if (length == 1) {
+        if (lengthOfNewArray == 1 || halfOfUnsortedArray == 1.5) {
+//        if (lengthOfNewArray <= 2) {
             index = 1;
+        } else if (lengthOfNewArray % 2 == 0) {
+            index = lengthOfNewArray;
         } else {
-            index = length - 1;
+            index = lengthOfNewArray - 1;
         }
 
         int counter = 0;
-        for (int i = (int) index; i < unsorted.length; i++){
-            right[counter] = unsorted[i];
-            if (unsorted.length > 2) {
+        for (int i = (int) index; i < unsortedArray.length; i++){
+            right[counter] = unsortedArray[i];
+            if (unsortedArray.length > 2) {
                 counter++;
             }
         }
