@@ -15,9 +15,4 @@ Write a function that accepts an array of unsorted integers, and returns a sorte
 
 - Ensure your tests are passing before you submit your solution.
 
-## Solution
-<!-- Embedded whiteboard image -->
 
-Soluton
-
-![Solution](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day36/assets/20180828_072948.jpg)
