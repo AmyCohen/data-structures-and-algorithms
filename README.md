@@ -23,3 +23,5 @@ Daily challenges to improve my usage of Java and the whiteboarding process. The 
 - Day 20: [Flip A Binary Tree](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day20)
 - Day 31: [Find First Repeated Word](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day31)
 - Day 32: [Find Intersecting Binary Trees](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day32)
+- Day 36: [Merge Sort](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day36)
+- Day 37: [Selection Sort & Comparison with Merge Sort](https://github.com/AmyCohen/data-structures-and-algorithms/tree/master/src/day37)
