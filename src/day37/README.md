@@ -46,12 +46,12 @@ long delta = System.currentTimeMillis() - start;
 
 Array Length: 10,000
 
-![tenthousand](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day37/assets/tenthousand.jpg)
+![tenthousand](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day37/assets/tenthousand.png)
 
 Array Length: 100,000
 
-![onehundredthousand](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day37/assets/onehundredthousand.jpg)
+![onehundredthousand](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day37/assets/onehundredthousand.png)
 
 Array Length: 1,000,000
 
-![onemillion](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day37/assets/onemillion.jpg)
+![onemillion](https://github.com/AmyCohen/data-structures-and-algorithms/blob/master/src/day37/assets/onemillion.png)
