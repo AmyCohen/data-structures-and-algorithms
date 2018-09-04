@@ -4,18 +4,18 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class SelectionSort {
+
+    public static int dynamicArraySizeAdjuster = 1_000_000;
     public static void main(String[] args) {
-        double[] arrayOne = randomN(5);
+        double[] arrayOne = randomN(dynamicArraySizeAdjuster);
         double[] arrayTwo = arrayOne;
-//        randomN();
         selectionSort(arrayOne);
-        selectionSort(arrayTwo);
+        MergeSort.mergeSort(arrayTwo);
 
     }
 
     public static double[] randomN(int size) {
         double[] randomSizedArray = new double[size];
-//        double[] tenThousandArrayTwo = new double[10_000];
         Random r = new Random();
 
         for (int i = 0; i < size; i++) {
@@ -23,7 +23,7 @@ public class SelectionSort {
             randomSizedArray[i] = dd;
         }
 
-        System.out.println("random array = " + Arrays.toString(randomSizedArray) + "\n");
+//        System.out.println("\n random array = " + Arrays.toString(randomSizedArray) + "\n");
         return randomSizedArray;
     }
 
@@ -57,7 +57,8 @@ public class SelectionSort {
             }
         }
 
-        System.out.println("sorted array = " + Arrays.toString(arr));
+        System.out.println("Selection Sort");
+//        System.out.println("Selection Sort = " + Arrays.toString(arr));
         System.out.println("array size = " + arr.length);
         long delta = System.currentTimeMillis() - start;
         System.out.println("milliseconds = " + delta + "\n");
